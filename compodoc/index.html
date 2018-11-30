@@ -54,6 +54,12 @@
                                     </a>
                                 </li>
                                 <li class="link">
+                                        <a href="./license.html"
+                                    >
+                                        <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                                    </a>
+                                </li>
+                                <li class="link">
                                     <a href="./dependencies.html"
                                         
                                         >
@@ -417,6 +423,12 @@
                                            </a>
                                        </li>
                                        <li class="link">
+                                               <a href="./license.html"
+                                           >
+                                               <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                                           </a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./dependencies.html"
                                                
                                                >
@@ -748,7 +760,14 @@
 <h2 id="intro">Intro</h2>
 <pre class="line-numbers"><code class="language-none">This grid is designed to be a full featured grid that can handle nearly anything that complex data tables may
 be expected to support.  By default, the grid is simple and basic, but becomes full featured through
-configuration.</code></pre><h2 id="publishing">Publishing</h2>
+configuration.</code></pre><h2 id="install">Install</h2>
+<pre class="line-numbers"><code class="language-none">&quot;dependencies&quot;: {
+    &quot;hci-ng-grid&quot;: &quot;2.0.x&quot;
+}</code></pre><pre class="line-numbers"><code class="language-none">import {GridModule} from &quot;hci-ng-grid&quot;;</code></pre><pre class="line-numbers"><code class="language-none">&#64;NgModule({
+    imports: [
+        GridModule.forRoot()
+    ]
+})</code></pre><h2 id="publishing">Publishing</h2>
 <pre class="line-numbers"><code class="language-none">Compiled code gets moved to the dist folder with a copy of the package.json.  Custom commands are required for
 packaging and publishing.  Use npmPack and npmPublish instead of the usual pack and publish.</code></pre><h2 id="basic-features">Basic Features</h2>
 <ul>

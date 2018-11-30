@@ -54,6 +54,12 @@
                                     </a>
                                 </li>
                                 <li class="link">
+                                        <a href="../license.html"
+                                    >
+                                        <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                                    </a>
+                                </li>
+                                <li class="link">
                                     <a href="../dependencies.html"
                                         
                                         >
@@ -414,6 +420,12 @@
                                                <a href="../changelog.html"
                                            >
                                                <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                               <a href="../license.html"
+                                           >
+                                               <span class="fa fa-fw fa-file-text-o"></span>LICENSE
                                            </a>
                                        </li>
                                        <li class="link">
@@ -8674,14 +8686,14 @@ export class GridComponent implements OnChanges, AfterViewInit {
 
       let headerHeight: number &#x3D; this.gridContainer.nativeElement.querySelector(&quot;#header-content&quot;).offsetHeight;
       if (this.gridService.getNVisibleRows() &lt;&#x3D; 0) {
-        let height: number &#x3D; Math.max(100, this.gridData.length * this.rowHeight);
+        let height: number &#x3D; Math.max(this.rowHeight * 3, this.gridData.length * this.rowHeight);
         this.renderer.setStyle(this.gridContainer.nativeElement.querySelector(&quot;#main-content&quot;), &quot;height&quot;, (headerHeight + height) + &quot;px&quot;);
         this.renderer.setStyle(this.gridContainer.nativeElement.querySelector(&quot;#left-view&quot;), &quot;height&quot;, height + &quot;px&quot;);
         this.renderer.setStyle(this.gridContainer.nativeElement.querySelector(&quot;#right-view&quot;), &quot;height&quot;, height + &quot;px&quot;);
         this.renderer.setStyle(this.gridContainer.nativeElement.querySelector(&quot;#hci-grid-busy&quot;), &quot;height&quot;, (headerHeight + height) + &quot;px&quot;);
         this.renderer.setStyle(this.gridContainer.nativeElement.querySelector(&quot;.empty-content&quot;), &quot;height&quot;, (headerHeight + height) + &quot;px&quot;);
       } else {
-        let height: number &#x3D; Math.max(100, this.gridService.getNVisibleRows() * this.rowHeight);
+        let height: number &#x3D; Math.max(this.rowHeight * 3, this.gridService.getNVisibleRows() * this.rowHeight);
         this.renderer.setStyle(this.gridContainer.nativeElement.querySelector(&quot;#main-content&quot;), &quot;height&quot;, (headerHeight + height) + &quot;px&quot;);
         this.renderer.setStyle(this.gridContainer.nativeElement.querySelector(&quot;#left-view&quot;), &quot;height&quot;, height + &quot;px&quot;);
         this.renderer.setStyle(this.gridContainer.nativeElement.querySelector(&quot;#right-view&quot;), &quot;height&quot;, height + &quot;px&quot;);
