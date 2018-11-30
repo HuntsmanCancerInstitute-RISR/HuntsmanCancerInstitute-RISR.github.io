@@ -1,0 +1,11 @@
+{
+  "name": "HCI-RISR-Github-Demo",
+  "description": "HCI-RISR Github Demo",
+  "private": true,
+  "scripts": {
+    "serve": "node server.js"
+  },
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
