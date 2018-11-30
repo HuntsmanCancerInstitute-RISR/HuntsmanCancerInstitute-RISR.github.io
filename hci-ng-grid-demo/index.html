@@ -5,8 +5,29 @@
     <title>hci-ng-grid</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      @-moz-keyframes spin {
+        to { -moz-transform: rotate(360deg); }
+      }
+      @-webkit-keyframes spin {
+        to { -webkit-transform: rotate(360deg); }
+      }
+      @keyframes spin {
+        to {transform:rotate(360deg);}
+      }
+
+      .spinner {
+        -webkit-animation: spin 2s infinite linear;
+      }
+    </style>
   </head>
   <body>
-    <demo>Loading...</demo>
-  <script type="text/javascript" src="/hci-ng-grid-demo/polyfills.bundle.js"></script><script type="text/javascript" src="/hci-ng-grid-demo/vendor.bundle.js"></script><script type="text/javascript" src="/hci-ng-grid-demo/main.bundle.js"></script><script type="text/javascript" src="/hci-ng-grid-demo/styles.bundle.js"></script></body>
+    <demo>
+      <div style="display: flex; width: 100vw; height: 100vh;">
+        <div style="display: flex; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto; width: 25%; height: 25%;">
+          <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMi4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0icGFnZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGcgaWQ9Il94MzFfMDBfcGVyY2VudCI+DQoJPGc+DQoJCTxnPg0KCQkJPHBhdGggZD0iTTI1Ni4xLDE4Ny4xYzM4LDAsNjguOSwzMC45LDY4LjksNjguOXMtMzAuOSw2OC45LTY4LjksNjguOVMxODcuMSwyOTQsMTg3LjEsMjU2UzIxOC4xLDE4Ny4xLDI1Ni4xLDE4Ny4xIE0yNTYuMSwxNTQuMg0KCQkJCWMtNTYuMiwwLTEwMS44LDQ1LjYtMTAxLjgsMTAxLjhzNDUuNiwxMDEuOCwxMDEuOCwxMDEuOFMzNTcuOSwzMTIuMiwzNTcuOSwyNTZTMzEyLjMsMTU0LjIsMjU2LjEsMTU0LjJMMjU2LjEsMTU0LjJ6Ii8+DQoJCTwvZz4NCgkJPGc+DQoJCQk8cGF0aCBkPSJNMzcwLjcsMTk0LjljLTQuNCwwLTguNi0yLjItMTEuMS02LjFjLTE2LTI1LjItNDMuMy00NS4xLTcxLjItNTJjLTYuMy0xLjUtMTAuNS03LjQtMTAtMTMuOEwyODcsMTYuOA0KCQkJCWMwLjMtMy43LDIuMS03LjEsNS4xLTkuM2MyLjktMi4zLDYuNy0zLjIsMTAuMy0yLjZjNzYuMywxMy4zLDE0MS4zLDYwLjcsMTc4LjQsMTMwYzEuOCwzLjMsMiw3LjEsMC44LDEwLjYNCgkJCQljLTEuMywzLjUtMy45LDYuMy03LjQsNy43bC05OC41LDQwLjdDMzc0LjEsMTk0LjYsMzcyLjQsMTk0LjksMzcwLjcsMTk0Ljl6IE0zMDUuNSwxMTQuNGMyNy4yLDkuMyw1Mi4zLDI3LjYsNzAsNTEuMWw3NC45LTMwLjkNCgkJCQljLTMxLjUtNTEtODAuOC04Ny0xMzguMy0xMDAuOUwzMDUuNSwxMTQuNHoiLz4NCgkJCTxwYXRoIGQ9Ik0zMDAuMiw1MDcuM2MtMi45LDAtNS43LTAuOS04LTIuN2MtMi45LTIuMy00LjgtNS43LTUuMS05LjRMMjc4LjQsMzg5Yy0wLjUtNi4zLDMuNi0xMi4xLDkuNy0xMy44DQoJCQkJYzMwLjEtOC4xLDU1LjYtMjYuOCw3MS44LTUyLjVjMy40LTUuNCwxMC4yLTcuNiwxNi4yLTUuMmw5OC41LDQwLjZjMy40LDEuNCw2LjEsNC4yLDcuMyw3LjdjMS4zLDMuNSwxLDcuMy0wLjcsMTAuNg0KCQkJCWMtMTYsMzAuNi0zOS42LDU4LjYtNjguMiw4MC45Yy0zMi43LDI1LjYtNjkuOSw0Mi4zLTExMC41LDQ5LjdDMzAxLjgsNTA3LjIsMzAxLDUwNy4zLDMwMC4yLDUwNy4zeiBNMzA1LjUsMzk3LjRsNi42LDgwLjcNCgkJCQljMzAuOC03LjcsNTkuMy0yMS42LDg0LjctNDEuNWMyMS42LTE2LjksNDAuMS0zNy40LDUzLjktNTkuOGwtNzQuOC0zMC45QzM1OC4zLDM2OS42LDMzMy45LDM4Ny41LDMwNS41LDM5Ny40eiIvPg0KCQkJPHBhdGggZD0iTTI1MS4xLDUxMS4zYy0wLjEsMC0wLjIsMC0wLjMsMGMtNzguNS0yLTE0OC44LTM3LjctMTk3LjgtMTAwLjRjLTIuMy0zLTMuMi02LjctMi42LTEwLjRjMC43LTMuNywyLjktNi45LDYuMS04LjkNCgkJCQlsOTAuOC01NS43YzUuNS0zLjQsMTIuNi0yLjMsMTYuOSwyLjZjMTUuNiwxOC4xLDQ2LjIsMzcuNiw3OS40LDQwLjRjNi40LDAuNSwxMS41LDUuNiwxMiwxMmw4LjYsMTA2LjJjMC4zLDMuNy0xLDcuNC0zLjYsMTAuMQ0KCQkJCUMyNTguMiw1MDkuOCwyNTQuNyw1MTEuMywyNTEuMSw1MTEuM3ogTTgzLjIsNDA2LjFjNDAuMiw0NS42LDkzLjgsNzIuOSwxNTMuNiw3OC4xbC02LjYtODAuNWMtMjguNi01LTU3LjUtMTkuNy03OC4zLTM5LjgNCgkJCQlMODMuMiw0MDYuMXoiLz4NCgkJCTxwYXRoIGQ9Ik0xNTQuNiwxNzcuNmMtMi40LDAtNC43LTAuNi02LjktMS45TDU2LjgsMTIwYy0zLjItMS45LTUuNC01LjEtNi04LjhjLTAuNy0zLjYsMC4yLTcuNCwyLjQtMTAuNA0KCQkJCUMxMDAsMzkuMSwxNzMuOSwxLjcsMjUwLjksMC43YzMuNywwLDcuMiwxLjUsOS44LDQuMmMyLjUsMi43LDMuOCw2LjQsMy41LDEwbC04LjYsMTA2LjJjLTAuNSw2LjQtNS42LDExLjUtMTIsMTINCgkJCQljLTI5LjYsMi40LTU5LjIsMTcuNC03OS4xLDQwQzE2MS45LDE3Ni4xLDE1OC4yLDE3Ny42LDE1NC42LDE3Ny42eiBNODMuNCwxMDUuNGw2OSw0Mi4zYzIxLjMtMjAuNyw0OC44LTM0LjYsNzcuOC0zOS40bDYuNi04MC42DQoJCQkJQzE3Ny45LDMyLjMsMTIyLjIsNjAuNSw4My40LDEwNS40eiIvPg0KCQkJPHBhdGggZD0iTTM3LjYsMzczLjljLTEuMiwwLTIuNS0wLjItMy43LTAuNWMtMy42LTEtNi41LTMuNS04LjEtNi45QzksMzMxLjgsMC4yLDI5Mi44LDAuNSwyNTMuN2MwLjMtMzguMyw5LjEtNzUuOSwyNS42LTEwOQ0KCQkJCWMxLjYtMy4zLDQuNi01LjgsOC4xLTYuOGMzLjUtMSw3LjQtMC41LDEwLjUsMS40bDkwLjgsNTUuN2M1LjQsMy4zLDcuNywxMC4xLDUuNCwxNmMtMTEuMSwyOC4xLTExLjIsNjAuNi0wLjIsODkuMQ0KCQkJCWMyLjMsNS45LDAsMTIuNi01LjQsMTUuOUw0NC41LDM3MkM0Mi40LDM3My4zLDQwLDM3My45LDM3LjYsMzczLjl6IE00My43LDE2OS42Yy0xMC45LDI2LjEtMTYuNyw1NS0xNi45LDg0LjMNCgkJCQljLTAuMiwzMC4xLDUuNSw2MC4yLDE2LjcsODcuOGw2OS4xLTQyLjRjLTguNS0yOC40LTguNS01OS4yLDAuMi04Ny4zTDQzLjcsMTY5LjZ6Ii8+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" class="spinner" />
+        </div>
+      </div>
+    </demo>
+  <script type="text/javascript" src="/hci-ng-grid-demo/polyfills.6081415851064df29032.bundle.js"></script><script type="text/javascript" src="/hci-ng-grid-demo/vendor.5faa8521c447cc1ff514.bundle.js"></script><script type="text/javascript" src="/hci-ng-grid-demo/main.04a2297186284815993c.bundle.js"></script><script type="text/javascript" src="/hci-ng-grid-demo/styles.2b1e077dc495ddaecc48.bundle.js"></script></body>
 </html>
