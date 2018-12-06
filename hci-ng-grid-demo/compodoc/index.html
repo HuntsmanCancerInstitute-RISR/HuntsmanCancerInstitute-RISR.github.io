@@ -783,14 +783,14 @@ packaging and publishing.  Use npmPack and npmPublish instead of the usual pack 
 <p>The basic syntax for data provided by the implementing component.</p>
 <pre class="line-numbers"><code class="language-none">&lt;hci-grid
   [data]=&quot;dataArray&quot;
-  [columnDefinitions]=&quot;[
+  [columns]=&quot;[
     { field: &quot;col1&quot;, name: &quot;Column 1&quot; },
     { field: &quot;col2&quot;, name: &quot;Column 2&quot; },
   ]&quot;&gt;
 &lt;/hci-grid&gt;</code></pre><p>The basic syntax for an external data call.</p>
 <pre class="line-numbers"><code class="language-none">&lt;hci-grid
   [dataCall]=&quot;dataRequest&quot;
-  [columnDefinitions]=&quot;[
+  [columns]=&quot;[
     { field: &quot;col1&quot;, name: &quot;Column 1&quot; },
     { field: &quot;col2&quot;, name: &quot;Column 2&quot; },
   ]&quot;
@@ -799,14 +799,12 @@ packaging and publishing.  Use npmPack and npmPublish instead of the usual pack 
   [externalPaging]=&quot;true&quot;
   [pageSize]=&quot;10&quot;&gt;
 &lt;/hci-grid&gt;</code></pre><p>And a function using mocked external data call.</p>
-<pre class="line-numbers"><code class="language-none">dataRequest(externalInfo: ExternalInfo): Promise&lt;ExternalData&gt; {
-  return new Promise((resolve, reject) =&gt; {
-    this.dataGeneratorService.getExternalData1(externalInfo).subscribe((externalData: ExternalData) =&gt; {
-      setTimeout(() =&gt;
-        resolve(externalData), 1000
-      );
-    });
-  });
+<pre class="line-numbers"><code class="language-none">dataRequest: (externalInfo: ExternalInfo) =&gt; {};
+
+ngOnInit() {
+  this.dataRequest = (externalInfo: ExternalInfo) =&gt; {
+    return Observable.of(new ExternalData(this.dataGeneratorService.getData(250), externalInfo)).delay(500);
+  };
 }</code></pre><h2 id="inputs">Inputs</h2>
 <pre class="line-numbers"><code class="language-none">data
 type: Object[]
