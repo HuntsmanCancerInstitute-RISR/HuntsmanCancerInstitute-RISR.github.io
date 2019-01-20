@@ -762,7 +762,7 @@
 be expected to support.  By default, the grid is simple and basic, but becomes full featured through
 configuration.</code></pre><h2 id="install">Install</h2>
 <pre class="line-numbers"><code class="language-none">&quot;dependencies&quot;: {
-    &quot;hci-ng-grid&quot;: &quot;2.0.x&quot;
+    &quot;hci-ng-grid&quot;: &quot;3.0.0&quot;
 }</code></pre><pre class="line-numbers"><code class="language-none">import {GridModule} from &quot;hci-ng-grid&quot;;</code></pre><pre class="line-numbers"><code class="language-none">&#64;NgModule({
     imports: [
         GridModule.forRoot()
@@ -877,7 +877,10 @@ default: undefined
 A shortcut for creating listeners.  Rather than passing in your own listeners, specify a mode and the required listeners will be created for you.</code></pre><pre class="line-numbers"><code class="language-none">logWarnings
 type: boolean
 default: true
-True if you want warnings to show in the console.</code></pre><h2 id="outputs">Outputs</h2>
+True if you want warnings to show in the console.</code></pre><pre class="line-numbers"><code class="language-none">display
+type: string
+default: flow-root
+Sets the display on the root component.  Although you could also do this with style on the grid.</code></pre><h2 id="outputs">Outputs</h2>
 <pre class="line-numbers"><code class="language-none">onCellSave
 type: any
 $event: { key: rows[i].key,
@@ -912,7 +915,13 @@ $event: warning message as a string
 Listen to this to handle warnings from the grid as you wish (e.g. as a toast popup).</code></pre><pre class="line-numbers"><code class="language-none">selectedRows
 type: any[]
 $event: [key1, key2, ...]
-This is an array of any instead of number because the row key could be anything.</code></pre><h2 id="advanced-features">Advanced Features</h2>
+This is an array of any instead of number because the row key could be anything.</code></pre><h2 id="global-config">Global Config</h2>
+<p>The root module can take configuration json that can be used to set defaults for every grid.
+For example, if you want every grid in your application to use the same theme and you don&#39;t want
+to specify that theme in every instance of the grid, you can do the following:</p>
+<pre class="line-numbers"><code class="language-none">GridModule.forRoot({
+  theme: &quot;report&quot;
+})</code></pre><h2 id="advanced-features">Advanced Features</h2>
 <h3 id="rendering-cells">Rendering Cells</h3>
 <p>Every refresh of data and every vertical scroll will re-render the visible rows and cells.  To speed things
 up, each cell is limited to rendering pure HTML.  However, there are several options of how to render and

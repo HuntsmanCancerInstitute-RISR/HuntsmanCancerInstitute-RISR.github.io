@@ -1169,7 +1169,7 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">/*
  * Copyright (c) 2016 Huntsman Cancer Institute at the University of Utah, Confidential and Proprietary
  */
-import {ModuleWithProviders, NgModule} from &quot;@angular/core&quot;;
+import {ANALYZE_FOR_ENTRY_COMPONENTS, ModuleWithProviders, NgModule} from &quot;@angular/core&quot;;
 import {CommonModule} from &quot;@angular/common&quot;;
 import {FormsModule} from &quot;@angular/forms&quot;;
 
@@ -1229,13 +1229,32 @@ import {ConfigMultiChoiceComponent} from &quot;./config/config-multi-choice.comp
   ]
 })
 export class GridModule {
-  static forRoot(globalConfig?: any): ModuleWithProviders {
+
+  static forRoot(globalConfig?: any, components?: any[]): ModuleWithProviders {
     return {
       providers: [
         GridGlobalService,
-        {provide: &quot;globalConfig&quot;, useValue: (globalConfig) ? globalConfig : {}}
+        {provide: &quot;globalConfig&quot;, useValue: (globalConfig) ? globalConfig : {}},
+        {
+          provide: ANALYZE_FOR_ENTRY_COMPONENTS,
+          useValue: components,
+          multi: true
+        }
       ],
       ngModule: GridModule
+    };
+  }
+
+  static withComponents(components: any[]): ModuleWithProviders {
+    return {
+      ngModule: GridModule,
+      providers: [
+        {
+          provide: ANALYZE_FOR_ENTRY_COMPONENTS,
+          useValue: components,
+          multi: true
+        }
+      ]
     };
   }
 }

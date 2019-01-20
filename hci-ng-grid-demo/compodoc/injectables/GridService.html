@@ -814,21 +814,21 @@
                                     </li>
                                     <li>
                                             <span class="modifier">Private</span>
+                                        <a href="#columnMap">columnMap</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
                                         <a href="#columnMapSubject">columnMapSubject</a>
                                     </li>
                                     <li>
                                         <a href="#columns">columns</a>
                                     </li>
                                     <li>
-                                            <span class="modifier">Private</span>
-                                        <a href="#columnWaiter">columnWaiter</a>
-                                    </li>
-                                    <li>
-                                            <span class="modifier">Private</span>
-                                        <a href="#columnWaiterSubscriptions">columnWaiterSubscriptions</a>
-                                    </li>
-                                    <li>
                                         <a href="#config">config</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#configSet">configSet</a>
                                     </li>
                                     <li>
                                         <a href="#configSubject">configSubject</a>
@@ -836,6 +836,14 @@
                                     <li>
                                             <span class="modifier">Private</span>
                                         <a href="#configured">configured</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#configWaitSubjects">configWaitSubjects</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#configWaitSubscriptions">configWaitSubscriptions</a>
                                     </li>
                                     <li>
                                             <span class="modifier">Private</span>
@@ -892,6 +900,10 @@
                                         <a href="#groupByCollapsed">groupByCollapsed</a>
                                     </li>
                                     <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#height">height</a>
+                                    </li>
+                                    <li>
                                         <a href="#id">id</a>
                                     </li>
                                     <li>
@@ -899,7 +911,7 @@
                                     </li>
                                     <li>
                                             <span class="modifier">Private</span>
-                                        <a href="#nColumnWaiters">nColumnWaiters</a>
+                                        <a href="#nConfigWait">nConfigWait</a>
                                     </li>
                                     <li>
                                             <span class="modifier">Private</span>
@@ -1152,22 +1164,26 @@
                                     </li>
                                     <li>
                                             <span class="modifier">Public</span>
-                                        <a href="#initColumnDefinitions">initColumnDefinitions</a>
-                                    </li>
-                                    <li>
-                                        <a href="#initColumnDefinitionsFinalize">initColumnDefinitionsFinalize</a>
-                                    </li>
-                                    <li>
-                                            <span class="modifier">Public</span>
-                                        <a href="#initColumnProperties">initColumnProperties</a>
-                                    </li>
-                                    <li>
-                                            <span class="modifier">Public</span>
                                         <a href="#initData">initData</a>
                                     </li>
                                     <li>
                                             <span class="modifier">Public</span>
                                         <a href="#initDataWithOptions">initDataWithOptions</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Public</span>
+                                        <a href="#initializeColumns">initializeColumns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#initializeColumnsFinalize">initializeColumnsFinalize</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Public</span>
+                                        <a href="#initializeColumnsGroupSortMap">initializeColumnsGroupSortMap</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Public</span>
+                                        <a href="#initializeColumnsKeysAndChoices">initializeColumnsKeysAndChoices</a>
                                     </li>
                                     <li>
                                             <span class="modifier">Public</span>
@@ -1186,8 +1202,15 @@
                                         <a href="#prepareData">prepareData</a>
                                     </li>
                                     <li>
+                                        <a href="#pushConfigWait">pushConfigWait</a>
+                                    </li>
+                                    <li>
                                             <span class="modifier">Public</span>
                                         <a href="#resetUtilityColumns">resetUtilityColumns</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Public</span>
+                                        <a href="#setAutoPageSize">setAutoPageSize</a>
                                     </li>
                                     <li>
                                             <span class="modifier">Public</span>
@@ -1230,6 +1253,9 @@
                                         <a href="#sortPreparedData">sortPreparedData</a>
                                     </li>
                                     <li>
+                                        <a href="#subscribeConfigWait">subscribeConfigWait</a>
+                                    </li>
+                                    <li>
                                             <span class="modifier">Public</span>
                                         <a href="#updateConfig">updateConfig</a>
                                     </li>
@@ -1255,7 +1281,7 @@
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/grid/services/grid.service.ts:98</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/grid/services/grid.service.ts:105</a></div>
                                         </td>
                                     </tr>
             
@@ -1334,7 +1360,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1312" class="link-to-prism">src/grid/services/grid.service.ts:1312</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1354" class="link-to-prism">src/grid/services/grid.service.ts:1354</a></div>
                                         </td>
                                     </tr>
             
@@ -1418,7 +1444,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1327" class="link-to-prism">src/grid/services/grid.service.ts:1327</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1369" class="link-to-prism">src/grid/services/grid.service.ts:1369</a></div>
                                         </td>
                                     </tr>
             
@@ -1504,7 +1530,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="680" class="link-to-prism">src/grid/services/grid.service.ts:680</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="730" class="link-to-prism">src/grid/services/grid.service.ts:730</a></div>
                                         </td>
                                     </tr>
             
@@ -1575,7 +1601,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="951" class="link-to-prism">src/grid/services/grid.service.ts:951</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1001" class="link-to-prism">src/grid/services/grid.service.ts:1001</a></div>
                                         </td>
                                     </tr>
             
@@ -1659,7 +1685,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="596" class="link-to-prism">src/grid/services/grid.service.ts:596</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="646" class="link-to-prism">src/grid/services/grid.service.ts:646</a></div>
                                         </td>
                                     </tr>
             
@@ -1698,7 +1724,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="498" class="link-to-prism">src/grid/services/grid.service.ts:498</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="549" class="link-to-prism">src/grid/services/grid.service.ts:549</a></div>
                                         </td>
                                     </tr>
             
@@ -1711,7 +1737,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>Map&lt;string[]&gt;</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -1745,7 +1771,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="577" class="link-to-prism">src/grid/services/grid.service.ts:577</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="627" class="link-to-prism">src/grid/services/grid.service.ts:627</a></div>
                                         </td>
                                     </tr>
             
@@ -1788,7 +1814,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="684" class="link-to-prism">src/grid/services/grid.service.ts:684</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="734" class="link-to-prism">src/grid/services/grid.service.ts:734</a></div>
                                         </td>
                                     </tr>
             
@@ -1859,7 +1885,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="716" class="link-to-prism">src/grid/services/grid.service.ts:716</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="766" class="link-to-prism">src/grid/services/grid.service.ts:766</a></div>
                                         </td>
                                     </tr>
             
@@ -1910,7 +1936,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="744" class="link-to-prism">src/grid/services/grid.service.ts:744</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="794" class="link-to-prism">src/grid/services/grid.service.ts:794</a></div>
                                         </td>
                                     </tr>
             
@@ -1949,7 +1975,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="898" class="link-to-prism">src/grid/services/grid.service.ts:898</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="948" class="link-to-prism">src/grid/services/grid.service.ts:948</a></div>
                                         </td>
                                     </tr>
             
@@ -2033,7 +2059,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="552" class="link-to-prism">src/grid/services/grid.service.ts:552</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="602" class="link-to-prism">src/grid/services/grid.service.ts:602</a></div>
                                         </td>
                                     </tr>
             
@@ -2104,7 +2130,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1300" class="link-to-prism">src/grid/services/grid.service.ts:1300</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1342" class="link-to-prism">src/grid/services/grid.service.ts:1342</a></div>
                                         </td>
                                     </tr>
             
@@ -2175,7 +2201,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="513" class="link-to-prism">src/grid/services/grid.service.ts:513</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="563" class="link-to-prism">src/grid/services/grid.service.ts:563</a></div>
                                         </td>
                                     </tr>
             
@@ -2214,7 +2240,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="735" class="link-to-prism">src/grid/services/grid.service.ts:735</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="785" class="link-to-prism">src/grid/services/grid.service.ts:785</a></div>
                                         </td>
                                     </tr>
             
@@ -2285,7 +2311,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="564" class="link-to-prism">src/grid/services/grid.service.ts:564</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="614" class="link-to-prism">src/grid/services/grid.service.ts:614</a></div>
                                         </td>
                                     </tr>
             
@@ -2324,7 +2350,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="529" class="link-to-prism">src/grid/services/grid.service.ts:529</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="579" class="link-to-prism">src/grid/services/grid.service.ts:579</a></div>
                                         </td>
                                     </tr>
             
@@ -2363,7 +2389,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="509" class="link-to-prism">src/grid/services/grid.service.ts:509</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="559" class="link-to-prism">src/grid/services/grid.service.ts:559</a></div>
                                         </td>
                                     </tr>
             
@@ -2402,7 +2428,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1361" class="link-to-prism">src/grid/services/grid.service.ts:1361</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1403" class="link-to-prism">src/grid/services/grid.service.ts:1403</a></div>
                                         </td>
                                     </tr>
             
@@ -2441,7 +2467,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1365" class="link-to-prism">src/grid/services/grid.service.ts:1365</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1407" class="link-to-prism">src/grid/services/grid.service.ts:1407</a></div>
                                         </td>
                                     </tr>
             
@@ -2480,7 +2506,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1369" class="link-to-prism">src/grid/services/grid.service.ts:1369</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1411" class="link-to-prism">src/grid/services/grid.service.ts:1411</a></div>
                                         </td>
                                     </tr>
             
@@ -2519,7 +2545,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="906" class="link-to-prism">src/grid/services/grid.service.ts:906</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="956" class="link-to-prism">src/grid/services/grid.service.ts:956</a></div>
                                         </td>
                                     </tr>
             
@@ -2603,7 +2629,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1308" class="link-to-prism">src/grid/services/grid.service.ts:1308</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1350" class="link-to-prism">src/grid/services/grid.service.ts:1350</a></div>
                                         </td>
                                     </tr>
             
@@ -2642,7 +2668,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="688" class="link-to-prism">src/grid/services/grid.service.ts:688</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="738" class="link-to-prism">src/grid/services/grid.service.ts:738</a></div>
                                         </td>
                                     </tr>
             
@@ -2726,7 +2752,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="542" class="link-to-prism">src/grid/services/grid.service.ts:542</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="592" class="link-to-prism">src/grid/services/grid.service.ts:592</a></div>
                                         </td>
                                     </tr>
             
@@ -2772,7 +2798,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="521" class="link-to-prism">src/grid/services/grid.service.ts:521</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="571" class="link-to-prism">src/grid/services/grid.service.ts:571</a></div>
                                         </td>
                                     </tr>
             
@@ -2811,7 +2837,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="525" class="link-to-prism">src/grid/services/grid.service.ts:525</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="575" class="link-to-prism">src/grid/services/grid.service.ts:575</a></div>
                                         </td>
                                     </tr>
             
@@ -2850,7 +2876,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="560" class="link-to-prism">src/grid/services/grid.service.ts:560</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="610" class="link-to-prism">src/grid/services/grid.service.ts:610</a></div>
                                         </td>
                                     </tr>
             
@@ -2889,7 +2915,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="517" class="link-to-prism">src/grid/services/grid.service.ts:517</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="567" class="link-to-prism">src/grid/services/grid.service.ts:567</a></div>
                                         </td>
                                     </tr>
             
@@ -2928,7 +2954,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1349" class="link-to-prism">src/grid/services/grid.service.ts:1349</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1391" class="link-to-prism">src/grid/services/grid.service.ts:1391</a></div>
                                         </td>
                                     </tr>
             
@@ -2967,7 +2993,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1353" class="link-to-prism">src/grid/services/grid.service.ts:1353</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1395" class="link-to-prism">src/grid/services/grid.service.ts:1395</a></div>
                                         </td>
                                     </tr>
             
@@ -3038,7 +3064,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1357" class="link-to-prism">src/grid/services/grid.service.ts:1357</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1399" class="link-to-prism">src/grid/services/grid.service.ts:1399</a></div>
                                         </td>
                                     </tr>
             
@@ -3077,7 +3103,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="923" class="link-to-prism">src/grid/services/grid.service.ts:923</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="973" class="link-to-prism">src/grid/services/grid.service.ts:973</a></div>
                                         </td>
                                     </tr>
             
@@ -3148,7 +3174,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="692" class="link-to-prism">src/grid/services/grid.service.ts:692</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="742" class="link-to-prism">src/grid/services/grid.service.ts:742</a></div>
                                         </td>
                                     </tr>
             
@@ -3219,7 +3245,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1373" class="link-to-prism">src/grid/services/grid.service.ts:1373</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1415" class="link-to-prism">src/grid/services/grid.service.ts:1415</a></div>
                                         </td>
                                     </tr>
             
@@ -3258,7 +3284,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="931" class="link-to-prism">src/grid/services/grid.service.ts:931</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="981" class="link-to-prism">src/grid/services/grid.service.ts:981</a></div>
                                         </td>
                                     </tr>
             
@@ -3329,7 +3355,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="941" class="link-to-prism">src/grid/services/grid.service.ts:941</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="991" class="link-to-prism">src/grid/services/grid.service.ts:991</a></div>
                                         </td>
                                     </tr>
             
@@ -3400,7 +3426,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="672" class="link-to-prism">src/grid/services/grid.service.ts:672</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="722" class="link-to-prism">src/grid/services/grid.service.ts:722</a></div>
                                         </td>
                                     </tr>
             
@@ -3439,7 +3465,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="676" class="link-to-prism">src/grid/services/grid.service.ts:676</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="726" class="link-to-prism">src/grid/services/grid.service.ts:726</a></div>
                                         </td>
                                     </tr>
             
@@ -3478,7 +3504,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1296" class="link-to-prism">src/grid/services/grid.service.ts:1296</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1338" class="link-to-prism">src/grid/services/grid.service.ts:1338</a></div>
                                         </td>
                                     </tr>
             
@@ -3517,7 +3543,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="533" class="link-to-prism">src/grid/services/grid.service.ts:533</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="583" class="link-to-prism">src/grid/services/grid.service.ts:583</a></div>
                                         </td>
                                     </tr>
             
@@ -3556,7 +3582,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1341" class="link-to-prism">src/grid/services/grid.service.ts:1341</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1383" class="link-to-prism">src/grid/services/grid.service.ts:1383</a></div>
                                         </td>
                                     </tr>
             
@@ -3642,7 +3668,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="963" class="link-to-prism">src/grid/services/grid.service.ts:963</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1013" class="link-to-prism">src/grid/services/grid.service.ts:1013</a></div>
                                         </td>
                                     </tr>
             
@@ -3745,191 +3771,6 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <a name="initColumnDefinitions"></a>
-                                    <span class="name">
-                                        <b>
-                                            <span class="modifier">Public</span>
-                                        initColumnDefinitions
-                                        </b>
-                                        <a href="#initColumnDefinitions"><span class="fa fa-link"></span></a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon fa fa-reset"></span>
-                                    <code>initColumnDefinitions()</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="268" class="link-to-prism">src/grid/services/grid.service.ts:268</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Based upon the nature of the columns, sorts them.  For example, utility columns as a negative, then fixed columns
-            starting at zero then others.</p>
-            </div>
-            
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-            
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="initColumnDefinitionsFinalize"></a>
-                                    <span class="name">
-                                        <b>
-                                        initColumnDefinitionsFinalize
-                                        </b>
-                                        <a href="#initColumnDefinitionsFinalize"><span class="fa fa-link"></span></a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-            <code>initColumnDefinitionsFinalize(columnMap: Map<string | []>)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="335" class="link-to-prism">src/grid/services/grid.service.ts:335</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                                <td>Type</td>
-                                                            <td>Optional</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                                <td>columnMap</td>
-                                                                
-                                                                    <td>
-                                                                                <code>Map&lt;string | []&gt;</code>
-                                                                    </td>
-                                                                
-                                                                <td>
-                                                                        no
-                                                                </td>
-                                                                
-            
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                        <div>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="initColumnProperties"></a>
-                                    <span class="name">
-                                        <b>
-                                            <span class="modifier">Public</span>
-                                        initColumnProperties
-                                        </b>
-                                        <a href="#initColumnProperties"><span class="fa fa-link"></span></a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon fa fa-reset"></span>
-                                    <code>initColumnProperties(columnMap: Map<string | []>)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="365" class="link-to-prism">src/grid/services/grid.service.ts:365</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Usually called when config changes, re-init the columns.  We re-sort based upon the preferred sort order then
-            calculate things like visible columns and group by, then re-sort based on the rendering order.</p>
-            </div>
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                                <td>Type</td>
-                                                            <td>Optional</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                                <td>columnMap</td>
-                                                                
-                                                                    <td>
-                                                                                <code>Map&lt;string | []&gt;</code>
-                                                                    </td>
-                                                                
-                                                                <td>
-                                                                        no
-                                                                </td>
-                                                                
-            
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                        <div>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
                                     <a name="initData"></a>
                                     <span class="name">
                                         <b>
@@ -3950,7 +3791,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1144" class="link-to-prism">src/grid/services/grid.service.ts:1144</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1186" class="link-to-prism">src/grid/services/grid.service.ts:1186</a></div>
                                         </td>
                                     </tr>
             
@@ -3989,7 +3830,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="992" class="link-to-prism">src/grid/services/grid.service.ts:992</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1042" class="link-to-prism">src/grid/services/grid.service.ts:1042</a></div>
                                         </td>
                                     </tr>
             
@@ -4081,6 +3922,166 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="initializeColumns"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        initializeColumns
+                                        </b>
+                                        <a href="#initializeColumns"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>initializeColumns()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="329" class="link-to-prism">src/grid/services/grid.service.ts:329</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="initializeColumnsFinalize"></a>
+                                    <span class="name">
+                                        <b>
+                                        initializeColumnsFinalize
+                                        </b>
+                                        <a href="#initializeColumnsFinalize"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>initializeColumnsFinalize()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="519" class="link-to-prism">src/grid/services/grid.service.ts:519</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="initializeColumnsGroupSortMap"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        initializeColumnsGroupSortMap
+                                        </b>
+                                        <a href="#initializeColumnsGroupSortMap"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>initializeColumnsGroupSortMap()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="383" class="link-to-prism">src/grid/services/grid.service.ts:383</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Usually called when config changes, re-init the columns.  We re-sort based upon the preferred sort order then
+            calculate things like visible columns and group by, then re-sort based on the rendering order.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="initializeColumnsKeysAndChoices"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        initializeColumnsKeysAndChoices
+                                        </b>
+                                        <a href="#initializeColumnsKeysAndChoices"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>initializeColumnsKeysAndChoices()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="341" class="link-to-prism">src/grid/services/grid.service.ts:341</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Based upon the nature of the columns, sorts them.  For example, utility columns as a negative, then fixed columns
+            starting at zero then others.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
                                     <a name="isColumnMapDefined"></a>
                                     <span class="name">
                                         <b>
@@ -4101,7 +4102,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1148" class="link-to-prism">src/grid/services/grid.service.ts:1148</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1190" class="link-to-prism">src/grid/services/grid.service.ts:1190</a></div>
                                         </td>
                                     </tr>
             
@@ -4140,7 +4141,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="556" class="link-to-prism">src/grid/services/grid.service.ts:556</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="606" class="link-to-prism">src/grid/services/grid.service.ts:606</a></div>
                                         </td>
                                     </tr>
             
@@ -4211,7 +4212,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="617" class="link-to-prism">src/grid/services/grid.service.ts:617</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="667" class="link-to-prism">src/grid/services/grid.service.ts:667</a></div>
                                         </td>
                                     </tr>
             
@@ -4323,7 +4324,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1082" class="link-to-prism">src/grid/services/grid.service.ts:1082</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1132" class="link-to-prism">src/grid/services/grid.service.ts:1132</a></div>
                                         </td>
                                     </tr>
             
@@ -4334,6 +4335,79 @@
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="pushConfigWait"></a>
+                                    <span class="name">
+                                        <b>
+                                        pushConfigWait
+                                        </b>
+                                        <a href="#pushConfigWait"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>pushConfigWait(callback: (subject: Subject<boolean>) => void)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="284" class="link-to-prism">src/grid/services/grid.service.ts:284</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>If there is a configuration step that needs to wait for a request, that gets pushed here as a callback function.
+            It must expect a subject that once the response comes back, does a next false to that subject.  If this wait involves
+            columns, there will be a lot of subjects and the idea is to wait for all of them before going to the next step.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                                <td>Type</td>
+                                                            <td>Optional</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                                <td>callback</td>
+                                                                
+                                                                    <td>
+                                                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                                    </td>
+                                                                
+                                                                <td>
+                                                                        no
+                                                                </td>
+                                                                
+            
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -4362,7 +4436,46 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1068" class="link-to-prism">src/grid/services/grid.service.ts:1068</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1118" class="link-to-prism">src/grid/services/grid.service.ts:1118</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="setAutoPageSize"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        setAutoPageSize
+                                        </b>
+                                        <a href="#setAutoPageSize"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>setAutoPageSize()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="1178" class="link-to-prism">src/grid/services/grid.service.ts:1178</a></div>
                                         </td>
                                     </tr>
             
@@ -4401,7 +4514,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="568" class="link-to-prism">src/grid/services/grid.service.ts:568</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="618" class="link-to-prism">src/grid/services/grid.service.ts:618</a></div>
                                         </td>
                                     </tr>
             
@@ -4472,7 +4585,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1161" class="link-to-prism">src/grid/services/grid.service.ts:1161</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1203" class="link-to-prism">src/grid/services/grid.service.ts:1203</a></div>
                                         </td>
                                     </tr>
             
@@ -4573,7 +4686,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="215" class="link-to-prism">src/grid/services/grid.service.ts:215</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="228" class="link-to-prism">src/grid/services/grid.service.ts:228</a></div>
                                         </td>
                                     </tr>
             
@@ -4616,7 +4729,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1120" class="link-to-prism">src/grid/services/grid.service.ts:1120</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1170" class="link-to-prism">src/grid/services/grid.service.ts:1170</a></div>
                                         </td>
                                     </tr>
             
@@ -4655,7 +4768,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -4689,7 +4802,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1176" class="link-to-prism">src/grid/services/grid.service.ts:1176</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1218" class="link-to-prism">src/grid/services/grid.service.ts:1218</a></div>
                                         </td>
                                     </tr>
             
@@ -4767,7 +4880,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1198" class="link-to-prism">src/grid/services/grid.service.ts:1198</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1240" class="link-to-prism">src/grid/services/grid.service.ts:1240</a></div>
                                         </td>
                                     </tr>
             
@@ -4838,7 +4951,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="652" class="link-to-prism">src/grid/services/grid.service.ts:652</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="702" class="link-to-prism">src/grid/services/grid.service.ts:702</a></div>
                                         </td>
                                     </tr>
             
@@ -4922,7 +5035,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="662" class="link-to-prism">src/grid/services/grid.service.ts:662</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="712" class="link-to-prism">src/grid/services/grid.service.ts:712</a></div>
                                         </td>
                                     </tr>
             
@@ -5006,7 +5119,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1222" class="link-to-prism">src/grid/services/grid.service.ts:1222</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1264" class="link-to-prism">src/grid/services/grid.service.ts:1264</a></div>
                                         </td>
                                     </tr>
             
@@ -5081,7 +5194,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="1238" class="link-to-prism">src/grid/services/grid.service.ts:1238</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="1280" class="link-to-prism">src/grid/services/grid.service.ts:1280</a></div>
                                         </td>
                                     </tr>
             
@@ -5092,6 +5205,80 @@
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="subscribeConfigWait"></a>
+                                    <span class="name">
+                                        <b>
+                                        subscribeConfigWait
+                                        </b>
+                                        <a href="#subscribeConfigWait"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>subscribeConfigWait(onComplete: () => void)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="300" class="link-to-prism">src/grid/services/grid.service.ts:300</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>This should be called after all configWaitSubjects are in place.  This function subscribes to them and when those
+            subscriptions come back with false, will subtract the number of active waiting subjects.  When it hits zero, we
+            unsubscribe all the subscriptions, reset the subject/subscription arrays and call the onComplete callback.  This
+            allows any function here to use this wait system and specify its next call in the callback.</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                                <td>Type</td>
+                                                            <td>Optional</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                                <td>onComplete</td>
+                                                                
+                                                                    <td>
+                                                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                                    </td>
+                                                                
+                                                                <td>
+                                                                        no
+                                                                </td>
+                                                                
+            
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -5120,7 +5307,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/grid/services/grid.service.ts:110</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/grid/services/grid.service.ts:117</a></div>
                                         </td>
                                     </tr>
             
@@ -5207,7 +5394,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="229" class="link-to-prism">src/grid/services/grid.service.ts:229</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="242" class="link-to-prism">src/grid/services/grid.service.ts:242</a></div>
                                         </td>
                                     </tr>
             
@@ -5302,7 +5489,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/grid/services/grid.service.ts:71</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/grid/services/grid.service.ts:72</a></div>
                                         </td>
                                     </tr>
             
@@ -5336,7 +5523,47 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/grid/services/grid.service.ts:44</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/grid/services/grid.service.ts:45</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="columnMap"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        columnMap
+                                        </b>
+                                        <a href="#columnMap"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>columnMap:     <code>Map&lt;string | []&gt;</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Map&lt;string | []&gt;</code>
+            
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>new Map&lt;string, Column[]&gt;()</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/grid/services/grid.service.ts:78</a></div>
                                         </td>
                                     </tr>
             
@@ -5376,7 +5603,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/grid/services/grid.service.ts:76</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/grid/services/grid.service.ts:79</a></div>
                                         </td>
                                     </tr>
             
@@ -5410,87 +5637,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/grid/services/grid.service.ts:45</a></div>
-                                        </td>
-                                    </tr>
-            
-            
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="columnWaiter"></a>
-                                    <span class="name">
-                                        <b>
-                                            <span class="modifier">Private</span>
-                                        columnWaiter
-                                        </b>
-                                        <a href="#columnWaiter"><span class="fa fa-link"></span></a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-reset"></span><code>columnWaiter:     <code>Subject&lt;boolean&gt;[]</code>
-            </code>
-                                </td>
-                            </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <i>Type : </i>    <code>Subject&lt;boolean&gt;[]</code>
-            
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <i>Default value : </i><code>[]</code>
-                                    </td>
-                                </tr>
-                                    <tr>
-                                        <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/grid/services/grid.service.ts:97</a></div>
-                                        </td>
-                                    </tr>
-            
-            
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="columnWaiterSubscriptions"></a>
-                                    <span class="name">
-                                        <b>
-                                            <span class="modifier">Private</span>
-                                        columnWaiterSubscriptions
-                                        </b>
-                                        <a href="#columnWaiterSubscriptions"><span class="fa fa-link"></span></a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-reset"></span><code>columnWaiterSubscriptions:     <code>Subscription[]</code>
-            </code>
-                                </td>
-                            </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <i>Type : </i>    <code>Subscription[]</code>
-            
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <i>Default value : </i><code>[]</code>
-                                    </td>
-                                </tr>
-                                    <tr>
-                                        <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/grid/services/grid.service.ts:98</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/grid/services/grid.service.ts:46</a></div>
                                         </td>
                                     </tr>
             
@@ -5529,7 +5676,47 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/grid/services/grid.service.ts:38</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/grid/services/grid.service.ts:39</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="configSet"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        configSet
+                                        </b>
+                                        <a href="#configSet"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>configSet:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+            
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>false</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/grid/services/grid.service.ts:105</a></div>
                                         </td>
                                     </tr>
             
@@ -5568,7 +5755,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/grid/services/grid.service.ts:39</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/grid/services/grid.service.ts:40</a></div>
                                         </td>
                                     </tr>
             
@@ -5608,7 +5795,87 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="79" class="link-to-prism">src/grid/services/grid.service.ts:79</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/grid/services/grid.service.ts:83</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="configWaitSubjects"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        configWaitSubjects
+                                        </b>
+                                        <a href="#configWaitSubjects"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>configWaitSubjects:     <code>Subject&lt;boolean&gt;[]</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Subject&lt;boolean&gt;[]</code>
+            
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>[]</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/grid/services/grid.service.ts:102</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="configWaitSubscriptions"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        configWaitSubscriptions
+                                        </b>
+                                        <a href="#configWaitSubscriptions"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>configWaitSubscriptions:     <code>Subscription[]</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>Subscription[]</code>
+            
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>[]</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="103" class="link-to-prism">src/grid/services/grid.service.ts:103</a></div>
                                         </td>
                                     </tr>
             
@@ -5648,7 +5915,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/grid/services/grid.service.ts:87</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/grid/services/grid.service.ts:92</a></div>
                                         </td>
                                     </tr>
             
@@ -5690,6 +5957,7 @@
                 externalFiltering: false,
                 externalSorting: false,
                 externalPaging: false,
+                pageSize: -1,
                 pageSizes: [10, 25, 50],
                 nVisibleRows: -1,
                 busyTemplate: undefined
@@ -5738,7 +6006,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/grid/services/grid.service.ts:90</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/grid/services/grid.service.ts:95</a></div>
                                         </td>
                                     </tr>
             
@@ -5778,7 +6046,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/grid/services/grid.service.ts:91</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/grid/services/grid.service.ts:96</a></div>
                                         </td>
                                     </tr>
             
@@ -5811,7 +6079,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/grid/services/grid.service.ts:70</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/grid/services/grid.service.ts:71</a></div>
                                         </td>
                                     </tr>
             
@@ -5845,7 +6113,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/grid/services/grid.service.ts:49</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/grid/services/grid.service.ts:50</a></div>
                                         </td>
                                     </tr>
             
@@ -5878,7 +6146,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/grid/services/grid.service.ts:69</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/grid/services/grid.service.ts:70</a></div>
                                         </td>
                                     </tr>
             
@@ -5912,7 +6180,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/grid/services/grid.service.ts:51</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/grid/services/grid.service.ts:52</a></div>
                                         </td>
                                     </tr>
             
@@ -5946,7 +6214,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/grid/services/grid.service.ts:50</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/grid/services/grid.service.ts:51</a></div>
                                         </td>
                                     </tr>
             
@@ -5985,7 +6253,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/grid/services/grid.service.ts:61</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/grid/services/grid.service.ts:62</a></div>
                                         </td>
                                     </tr>
             
@@ -6025,7 +6293,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/grid/services/grid.service.ts:77</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/grid/services/grid.service.ts:81</a></div>
                                         </td>
                                     </tr>
             
@@ -6065,7 +6333,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/grid/services/grid.service.ts:78</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/grid/services/grid.service.ts:82</a></div>
                                         </td>
                                     </tr>
             
@@ -6099,7 +6367,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/grid/services/grid.service.ts:46</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/grid/services/grid.service.ts:47</a></div>
                                         </td>
                                     </tr>
             
@@ -6133,7 +6401,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/grid/services/grid.service.ts:73</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/grid/services/grid.service.ts:74</a></div>
                                         </td>
                                     </tr>
             
@@ -6167,7 +6435,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/grid/services/grid.service.ts:47</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/grid/services/grid.service.ts:48</a></div>
                                         </td>
                                     </tr>
             
@@ -6201,7 +6469,42 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/grid/services/grid.service.ts:48</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/grid/services/grid.service.ts:49</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="height"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        height
+                                        </b>
+                                        <a href="#height"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>height:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/grid/services/grid.service.ts:88</a></div>
                                         </td>
                                     </tr>
             
@@ -6235,7 +6538,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/grid/services/grid.service.ts:43</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/grid/services/grid.service.ts:44</a></div>
                                         </td>
                                     </tr>
             
@@ -6269,7 +6572,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/grid/services/grid.service.ts:41</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/grid/services/grid.service.ts:42</a></div>
                                         </td>
                                     </tr>
             
@@ -6280,19 +6583,19 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <a name="nColumnWaiters"></a>
+                                    <a name="nConfigWait"></a>
                                     <span class="name">
                                         <b>
                                             <span class="modifier">Private</span>
-                                        nColumnWaiters
+                                        nConfigWait
                                         </b>
-                                        <a href="#nColumnWaiters"><span class="fa fa-link"></span></a>
+                                        <a href="#nConfigWait"><span class="fa fa-link"></span></a>
                                     </span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-reset"></span><code>nColumnWaiters:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>nConfigWait:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
             </code>
                                 </td>
                             </tr>
@@ -6309,7 +6612,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/grid/services/grid.service.ts:96</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/grid/services/grid.service.ts:101</a></div>
                                         </td>
                                     </tr>
             
@@ -6349,7 +6652,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/grid/services/grid.service.ts:81</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/grid/services/grid.service.ts:85</a></div>
                                         </td>
                                     </tr>
             
@@ -6389,7 +6692,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/grid/services/grid.service.ts:82</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/grid/services/grid.service.ts:86</a></div>
                                         </td>
                                     </tr>
             
@@ -6429,7 +6732,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/grid/services/grid.service.ts:80</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/grid/services/grid.service.ts:84</a></div>
                                         </td>
                                     </tr>
             
@@ -6469,7 +6772,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/grid/services/grid.service.ts:83</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/grid/services/grid.service.ts:87</a></div>
                                         </td>
                                     </tr>
             
@@ -6503,7 +6806,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/grid/services/grid.service.ts:53</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/grid/services/grid.service.ts:54</a></div>
                                         </td>
                                     </tr>
             
@@ -6537,7 +6840,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/grid/services/grid.service.ts:55</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/grid/services/grid.service.ts:56</a></div>
                                         </td>
                                     </tr>
             
@@ -6576,7 +6879,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/grid/services/grid.service.ts:66</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/grid/services/grid.service.ts:67</a></div>
                                         </td>
                                     </tr>
             
@@ -6609,7 +6912,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/grid/services/grid.service.ts:67</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/grid/services/grid.service.ts:68</a></div>
                                         </td>
                                     </tr>
             
@@ -6643,7 +6946,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/grid/services/grid.service.ts:52</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/grid/services/grid.service.ts:53</a></div>
                                         </td>
                                     </tr>
             
@@ -6677,7 +6980,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/grid/services/grid.service.ts:56</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/grid/services/grid.service.ts:57</a></div>
                                         </td>
                                     </tr>
             
@@ -6717,7 +7020,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/grid/services/grid.service.ts:85</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/grid/services/grid.service.ts:90</a></div>
                                         </td>
                                     </tr>
             
@@ -6757,7 +7060,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/grid/services/grid.service.ts:75</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/grid/services/grid.service.ts:76</a></div>
                                         </td>
                                     </tr>
             
@@ -6797,7 +7100,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/grid/services/grid.service.ts:93</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/grid/services/grid.service.ts:98</a></div>
                                         </td>
                                     </tr>
             
@@ -6837,7 +7140,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/grid/services/grid.service.ts:94</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/grid/services/grid.service.ts:99</a></div>
                                         </td>
                                     </tr>
             
@@ -6876,7 +7179,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/grid/services/grid.service.ts:63</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/grid/services/grid.service.ts:64</a></div>
                                         </td>
                                     </tr>
             
@@ -6909,7 +7212,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/grid/services/grid.service.ts:64</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/grid/services/grid.service.ts:65</a></div>
                                         </td>
                                     </tr>
             
@@ -6949,7 +7252,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/grid/services/grid.service.ts:88</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/grid/services/grid.service.ts:93</a></div>
                                         </td>
                                     </tr>
             
@@ -6988,7 +7291,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/grid/services/grid.service.ts:58</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/grid/services/grid.service.ts:59</a></div>
                                         </td>
                                     </tr>
             
@@ -7027,7 +7330,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/grid/services/grid.service.ts:59</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/grid/services/grid.service.ts:60</a></div>
                                         </td>
                                     </tr>
             
@@ -7072,6 +7375,7 @@ export class GridService {
     externalFiltering: false,
     externalSorting: false,
     externalPaging: false,
+    pageSize: -1,
     pageSizes: [10, 25, 50],
     nVisibleRows: -1,
     busyTemplate: undefined
@@ -7115,7 +7419,10 @@ export class GridService {
   gridElement: HTMLElement;
 
   private selectedRowColumn: number &#x3D; 0;
+
+  private columnMap: Map&lt;string, Column[]&gt; &#x3D; new Map&lt;string, Column[]&gt;();
   private columnMapSubject: BehaviorSubject&lt;Map&lt;string, Column[]&gt;&gt; &#x3D; new BehaviorSubject&lt;Map&lt;string, Column[]&gt;&gt;(undefined);
+
   private filterMap: Map&lt;string, FilterInfo[]&gt; &#x3D; new Map&lt;string, FilterInfo[]&gt;();
   private filterMapSubject: BehaviorSubject&lt;Map&lt;string, FilterInfo[]&gt;&gt; &#x3D; new BehaviorSubject&lt;Map&lt;string, FilterInfo[]&gt;&gt;(this.filterMap);
   private configured: boolean &#x3D; false;
@@ -7123,6 +7430,7 @@ export class GridService {
   private nFixedColumns: number &#x3D; 0;
   private nNonFixedColumns: number &#x3D; 0;
   private nVisibleColumns: number &#x3D; 0;
+  private height: number;
 
   private rowChangedSubject: Subject&lt;RowChange&gt; &#x3D; new Subject&lt;RowChange&gt;();
 
@@ -7135,9 +7443,11 @@ export class GridService {
   private selectedRows: any[] &#x3D; [];
   private selectedRowsSubject: Subject&lt;any[]&gt; &#x3D; new Subject&lt;any[]&gt;();
 
-  private nColumnWaiters: number &#x3D; 0;
-  private columnWaiter: Subject&lt;boolean&gt;[] &#x3D; [];
-  private columnWaiterSubscriptions: Subscription[] &#x3D; [];
+  private nConfigWait: number &#x3D; 0;
+  private configWaitSubjects: Subject&lt;boolean&gt;[] &#x3D; [];
+  private configWaitSubscriptions: Subscription[] &#x3D; [];
+
+  private configSet: boolean &#x3D; false;
 
   constructor(private gridGlobalService: GridGlobalService, private http: HttpClient) {
     this.gridGlobalService.register(this);
@@ -7238,12 +7548,18 @@ export class GridService {
     if (config.nVisibleRows !&#x3D;&#x3D; undefined) {
       this.nVisibleRows &#x3D; config.nVisibleRows;
     }
+    if (config.height !&#x3D;&#x3D; undefined) {
+      this.height &#x3D; config.height;
+    }
 
     this.setNVisibleRows();
 
+    this.configSet &#x3D; true;
+    this.setAutoPageSize();
+
     // Notify listeners if anything related to column configuration changed.
     if (columnsChanged) {
-      this.initColumnDefinitions();
+      this.initializeColumns();
     } else {
       this.configSubject.next(this.config);
     }
@@ -7304,22 +7620,79 @@ export class GridService {
   }
 
   /**
+   * If there is a configuration step that needs to wait for a request, that gets pushed here as a callback function.
+   * It must expect a subject that once the response comes back, does a next false to that subject.  If this wait involves
+   * columns, there will be a lot of subjects and the idea is to wait for all of them before going to the next step.
+   *
+   * @param {(subject: Subject&lt;boolean&gt;) &#x3D;&gt; any} callback
+   */
+  pushConfigWait(callback: (subject: Subject&lt;boolean&gt;) &#x3D;&gt; any) {
+    this.nConfigWait++;
+    let subject: Subject&lt;boolean&gt; &#x3D; new Subject&lt;boolean&gt;();
+    this.configWaitSubjects.push(subject);
+
+    callback(subject);
+  }
+
+  /**
+   * This should be called after all configWaitSubjects are in place.  This function subscribes to them and when those
+   * subscriptions come back with false, will subtract the number of active waiting subjects.  When it hits zero, we
+   * unsubscribe all the subscriptions, reset the subject/subscription arrays and call the onComplete callback.  This
+   * allows any function here to use this wait system and specify its next call in the callback.
+   *
+   * @param {() &#x3D;&gt; any} onComplete
+   */
+  subscribeConfigWait(onComplete: () &#x3D;&gt; any) {
+    if (this.configWaitSubjects.length &gt; 0) {
+      for (let subject of this.configWaitSubjects) {
+        this.configWaitSubscriptions.push(
+          subject.subscribe((waiting: boolean) &#x3D;&gt; {
+            if (!waiting) {
+              this.nConfigWait--;
+
+              if (this.nConfigWait &#x3D;&#x3D;&#x3D; 0) {
+                for (let subscription of this.configWaitSubscriptions) {
+                  if (subscription) {
+                    subscription.unsubscribe();
+                  }
+                }
+
+                this.configWaitSubjects &#x3D; [];
+                this.configWaitSubscriptions &#x3D; [];
+
+                onComplete();
+              }
+            }
+          })
+        );
+      }
+    } else {
+      onComplete();
+    }
+  }
+
+  public initializeColumns(): void {
+    if (isDevMode()) {
+      console.debug(&quot;hci-grid: &quot; + this.id + &quot;: GridService.initializeColumns()&quot;);
+    }
+
+    this.initializeColumnsKeysAndChoices();
+  }
+
+  /**
    * Based upon the nature of the columns, sorts them.  For example, utility columns as a negative, then fixed columns
    * starting at zero then others.
    */
-  public initColumnDefinitions(): void {
-    if (isDevMode()) {
-      console.debug(&quot;hci-grid: &quot; + this.id + &quot;: GridService.initColumnDefinitions()&quot;);
-    }
+  public initializeColumnsKeysAndChoices(): void {
+    this.createColumnMap();
 
-    let columnMap: Map&lt;string, Column[]&gt; &#x3D; this.createColumnMap();
-
+    // If no columns are defined, return the map with the empty key values.
     if (!this.columns) {
-      this.columnMapSubject.next(columnMap);
+      this.columnMapSubject.next(this.columnMap);
       return;
     }
 
-    // Prior to arranging columns in initColumnProperties, if the key is not set, use the first column.
+    // Prior to arranging columns in initializeColumnsGroupSortMap, if the key is not set, use the first column.
     let keyDefined: boolean &#x3D; false;
     for (var i &#x3D; 0; i &lt; this.columns.length; i++) {
       if (this.columns[i].isKey) {
@@ -7332,81 +7705,29 @@ export class GridService {
 
     for (let column of this.columns) {
       if (column.choiceUrl) {
-        let wait: Subject&lt;boolean&gt; &#x3D; new Subject&lt;boolean&gt;();
-        this.nColumnWaiters++;
-        this.columnWaiter.push(wait);
-
-        this.http.get(column.choiceUrl).subscribe((choices: any) &#x3D;&gt; {
-          if (isDevMode()) {
-            console.debug(&quot;choiceUrl.subscribe: &quot; + column.field + &quot;: choices: &quot; + choices.length);
-          }
-
-          column.setChoices(choices);
-          wait.next(false);
+        // Push a callback to request an array of choices from the choiceUrl.
+        this.pushConfigWait((subject: Subject&lt;boolean&gt;) &#x3D;&gt; {
+          this.http.get(column.choiceUrl).subscribe((choices: any) &#x3D;&gt; {
+            column.setChoices(choices);
+            subject.next(false);
+          });
         });
       }
     }
 
-    if (this.columnWaiter.length &gt; 0) {
-      for (let subject of this.columnWaiter) {
-        this.columnWaiterSubscriptions.push(
-            subject.subscribe((waiting: boolean) &#x3D;&gt; {
-              if (!waiting) {
-                this.nColumnWaiters--;
-
-                if (this.nColumnWaiters &#x3D;&#x3D;&#x3D; 0) {
-                  for (let subscription of this.columnWaiterSubscriptions) {
-                    if (subscription) {
-                      subscription.unsubscribe();
-                    }
-                  }
-
-                  this.columnWaiter &#x3D; [];
-                  this.columnWaiterSubscriptions &#x3D; [];
-                  this.initColumnDefinitionsFinalize(columnMap);
-                }
-              }
-            })
-        );
-      }
-    } else {
-      this.initColumnDefinitionsFinalize(columnMap);
-    }
-  }
-
-  initColumnDefinitionsFinalize(columnMap: Map&lt;string, Column[]&gt;) {
-    if (isDevMode()) {
-      console.debug(&quot;hci-grid: &quot; + this.id + &quot;: GridService.initColumnDefinitionsFinalize()&quot;);
-    }
-
-    this.initColumnProperties(columnMap);
-
-    this.nFixedColumns &#x3D; 0;
-    this.nNonFixedColumns &#x3D; 0;
-    for (var j &#x3D; 0; j &lt; this.columns.length; j++) {
-      if (this.columns[j].visible) {
-        if (this.columns[j].isFixed) {
-          this.nFixedColumns &#x3D; this.nFixedColumns + 1;
-        } else {
-          this.nNonFixedColumns &#x3D; this.nNonFixedColumns + 1;
-        }
-      }
-    }
-
-    this.config.columns &#x3D; this.columns;
-
-    this.columnMapSubject.next(columnMap);
-
-    this.configSubject.next(this.config);
+    // Trigger the next initialize step upon done waiting if there is anything to wait on.
+    this.subscribeConfigWait(() &#x3D;&gt; {
+      this.initializeColumnsGroupSortMap();
+    });
   }
 
   /**
    * Usually called when config changes, re-init the columns.  We re-sort based upon the preferred sort order then
    * calculate things like visible columns and group by, then re-sort based on the rendering order.
    */
-  public initColumnProperties(columnMap: Map&lt;string, Column[]&gt;): void {
+  public initializeColumnsGroupSortMap(): void {
     if (isDevMode()) {
-      console.debug(&quot;hci-grid: &quot; + this.id + &quot;: GridService.initColumnProperties&quot;);
+      console.debug(&quot;hci-grid: &quot; + this.id + &quot;: GridService.initializeColumnsGroupSortMap&quot;);
     }
 
     this.columns.sort((a: Column, b: Column) &#x3D;&gt; {
@@ -7499,28 +7820,35 @@ export class GridService {
       }
     });
 
+    // Push the columns to the different maps.
     for (var j &#x3D; 0; j &lt; this.columns.length; j++) {
-      columnMap.get(&quot;ALL&quot;).push(this.columns[j]);
+      this.columnMap.get(&quot;ALL&quot;).push(this.columns[j]);
 
       if (this.columns[j].visible) {
         this.columns[j].id &#x3D; j;
-        columnMap.get(&quot;VISIBLE&quot;).push(this.columns[j]);
+        this.columnMap.get(&quot;VISIBLE&quot;).push(this.columns[j]);
 
         if (this.columns[j].isUtility) {
-          columnMap.get(&quot;UTILITY&quot;).push(this.columns[j]);
+          this.columnMap.get(&quot;UTILITY&quot;).push(this.columns[j]);
         }
         if (this.columns[j].isUtility || this.columns[j].isFixed) {
-          columnMap.get(&quot;LEFT_VISIBLE&quot;).push(this.columns[j]);
+          this.columnMap.get(&quot;LEFT_VISIBLE&quot;).push(this.columns[j]);
         } else {
-          columnMap.get(&quot;MAIN_VISIBLE&quot;).push(this.columns[j]);
+          this.columnMap.get(&quot;MAIN_VISIBLE&quot;).push(this.columns[j]);
         }
       } else {
-        columnMap.get(&quot;NON_VISIBLE&quot;).push(this.columns[j]);
+        this.columnMap.get(&quot;NON_VISIBLE&quot;).push(this.columns[j]);
       }
     }
 
-    if (columnMap.get(&quot;VISIBLE&quot;).length &gt; 0) {
-      columnMap.get(&quot;VISIBLE&quot;)[columnMap.get(&quot;VISIBLE&quot;).length - 1].isLast &#x3D; true;
+    if (this.columnMap.get(&quot;VISIBLE&quot;).length &gt; 0) {
+      this.columnMap.get(&quot;VISIBLE&quot;)[this.columnMap.get(&quot;VISIBLE&quot;).length - 1].isLast &#x3D; true;
+
+      if (this.columnMap.get(&quot;LEFT_VISIBLE&quot;).length &gt; 0 &amp;&amp; this.columnMap.get(&quot;MAIN_VISIBLE&quot;).length &#x3D;&#x3D;&#x3D; 0) {
+        this.columnMap.get(&quot;LEFT_VISIBLE&quot;)[this.columnMap.get(&quot;LEFT_VISIBLE&quot;).length - 1].isLast &#x3D; true;
+      } else {
+        this.columnMap.get(&quot;MAIN_VISIBLE&quot;)[this.columnMap.get(&quot;MAIN_VISIBLE&quot;).length - 1].isLast &#x3D; true;
+      }
     }
 
     if (isDevMode()) {
@@ -7529,6 +7857,32 @@ export class GridService {
             + &quot;, visible: &quot; + this.columns[j].visible + &quot;, selectable: &quot; + this.columns[j].selectable + &quot;, isFixed: &quot; + this.columns[j].isFixed);
       }
     }
+
+    this.initializeColumnsFinalize();
+  }
+
+  initializeColumnsFinalize() {
+    if (isDevMode()) {
+      console.debug(&quot;hci-grid: &quot; + this.id + &quot;: GridService.initializeColumnsFinalize()&quot;);
+    }
+
+    this.nFixedColumns &#x3D; 0;
+    this.nNonFixedColumns &#x3D; 0;
+    for (var j &#x3D; 0; j &lt; this.columns.length; j++) {
+      if (this.columns[j].visible) {
+        if (this.columns[j].isFixed) {
+          this.nFixedColumns &#x3D; this.nFixedColumns + 1;
+        } else {
+          this.nNonFixedColumns &#x3D; this.nNonFixedColumns + 1;
+        }
+      }
+    }
+
+    this.config.columns &#x3D; this.columns;
+
+    this.columnMapSubject.next(this.columnMap);
+
+    this.configSubject.next(this.config);
   }
 
   /**
@@ -7537,15 +7891,14 @@ export class GridService {
    *
    * @returns {Map&lt;string, Column[]&gt;}
    */
-  public createColumnMap(): Map&lt;string, Column[]&gt; {
-    let columnMap: Map&lt;string, Column[]&gt; &#x3D; new Map&lt;string, Column[]&gt;();
-    columnMap.set(&quot;ALL&quot;, []);
-    columnMap.set(&quot;UTILITY&quot;, []);
-    columnMap.set(&quot;VISIBLE&quot;, []);
-    columnMap.set(&quot;LEFT_VISIBLE&quot;, []);
-    columnMap.set(&quot;MAIN_VISIBLE&quot;, []);
-    columnMap.set(&quot;NON_VISIBLE&quot;, []);
-    return columnMap;
+  public createColumnMap(): void {
+    this.columnMap &#x3D; new Map&lt;string, Column[]&gt;();
+    this.columnMap.set(&quot;ALL&quot;, []);
+    this.columnMap.set(&quot;UTILITY&quot;, []);
+    this.columnMap.set(&quot;VISIBLE&quot;, []);
+    this.columnMap.set(&quot;LEFT_VISIBLE&quot;, []);
+    this.columnMap.set(&quot;MAIN_VISIBLE&quot;, []);
+    this.columnMap.set(&quot;NON_VISIBLE&quot;, []);
   }
 
   public getConfigSubject(): BehaviorSubject&lt;any&gt; {
@@ -8159,28 +8512,20 @@ export class GridService {
    * @param originalData
    * @returns {boolean}
    */
-  public setOriginalData(originalData: Object[]): boolean {
+  public setOriginalData(originalData: Object[]): void {
     this.originalData &#x3D; originalData;
 
-    if (this.pageInfo.getPageSize() &#x3D;&#x3D;&#x3D; -1 &amp;&amp; this.originalData.length &gt; 50) {
-      this.pageInfo.setPageSize(10);
-    }
+    this.setAutoPageSize();
 
-    /*if (!this.columns &amp;&amp; this.originalData.length &gt; 0) {
-      this.columns &#x3D; [];
-      let keys: string[] &#x3D; Object.keys(this.originalData[0]);
-      for (var i &#x3D; 0; i &lt; keys.length; i++) {
-        this.columns.push(Column.deserialize({ field: keys[i], template: &quot;LabelCell&quot; }));
-        this.columns &#x3D; this.columns;
-      }
-      this.initColumnDefinitions();
-      return true;
-    } else {
-      this.initData();
-      return false;
-    }*/
     this.initData();
-    return false;
+  }
+
+  public setAutoPageSize(): void {
+    if (this.originalData &amp;&amp; this.configSet) {
+      if (this.pageInfo.getPageSize() &#x3D;&#x3D;&#x3D; -1 &amp;&amp; this.originalData.length &gt; 50 &amp;&amp; this.height &#x3D;&#x3D;&#x3D; undefined) {
+        this.pageInfo.setPageSize(10);
+      }
+    }
   }
 
   public initData(): void {
