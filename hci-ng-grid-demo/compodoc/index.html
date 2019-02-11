@@ -755,14 +755,14 @@
                <div class="content getting-started">
                    <div class="content-data">
 
-<h1 id="hci-s-angular-grid-library">HCI&#39;s Angular Grid Library</h1>
+<h1 id="huntsman-cancer-institute-s-angular-grid-library">Huntsman Cancer Institute&#39;s Angular Grid Library</h1>
 <h2 id="hci-ng-grid-demo-on-github"><a href="https://huntsmancancerinstitute-risr.github.io/hci-ng-grid-demo">hci-ng-grid Demo on Github</a></h2>
 <h2 id="intro">Intro</h2>
 <pre class="line-numbers"><code class="language-none">This grid is designed to be a full featured grid that can handle nearly anything that complex data tables may
 be expected to support.  By default, the grid is simple and basic, but becomes full featured through
 configuration.</code></pre><h2 id="install">Install</h2>
 <pre class="line-numbers"><code class="language-none">&quot;dependencies&quot;: {
-    &quot;hci-ng-grid&quot;: &quot;3.0.0&quot;
+    &quot;hci-ng-grid&quot;: &quot;3.1.0-beta.2&quot;
 }</code></pre><pre class="line-numbers"><code class="language-none">import {GridModule} from &quot;hci-ng-grid&quot;;</code></pre><pre class="line-numbers"><code class="language-none">&#64;NgModule({
     imports: [
         GridModule.forRoot()
@@ -915,7 +915,22 @@ $event: warning message as a string
 Listen to this to handle warnings from the grid as you wish (e.g. as a toast popup).</code></pre><pre class="line-numbers"><code class="language-none">selectedRows
 type: any[]
 $event: [key1, key2, ...]
-This is an array of any instead of number because the row key could be anything.</code></pre><h2 id="global-config">Global Config</h2>
+This is an array of any instead of number because the row key could be anything.</code></pre><pre class="line-numbers"><code class="language-none">filterEvent
+type: FilterInfo[]
+$event: FilterInfo[]
+This is the array of filters used when a column&#39;s filters are applied.  In the case of a select where there are multiple
+FilterInfos, this includes the full list and not the one that changed.  This event is fired upon click.  It will take
+some delay for data to come back at which point the filterEvent would be fired.</code></pre><pre class="line-numbers"><code class="language-none">dataFiltered
+type: any
+$event: {type, status, nData}
+This is emitted when a filter event returns data.  It will provide the number of rows returning.</code></pre><pre class="line-numbers"><code class="language-none">sortEvent
+type: SortInfo
+$event: SortInfo
+This is the sortInfo emitted when a column header is clicked.  It will take
+some delay for data to come back at which point the sortEvent would be fired.</code></pre><pre class="line-numbers"><code class="language-none">dataSorted
+type: any
+$event: {type, status, field}
+This is emitted when a sort event returns data.  It will provide the field being sorted.</code></pre><h2 id="global-config">Global Config</h2>
 <p>The root module can take configuration json that can be used to set defaults for every grid.
 For example, if you want every grid in your application to use the same theme and you don&#39;t want
 to specify that theme in every instance of the grid, you can do the following:</p>
