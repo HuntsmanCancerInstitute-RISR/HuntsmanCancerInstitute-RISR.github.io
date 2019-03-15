@@ -867,7 +867,7 @@
   &lt;div class&#x3D;&quot;d-flex flex-nowrap sort-icon&quot;&gt;
     &lt;div [id]&#x3D;&quot;&#x27;filter-&#x27; + column.id&quot; *ngIf&#x3D;&quot;column.filterRenderer&quot;&gt;
       &lt;a id&#x3D;&quot;filterDropdownToggle&quot;
-         (click)&#x3D;&quot;showFilter()&quot;
+         (click)&#x3D;&quot;$event.stopPropagation(); showFilter();&quot;
          class&#x3D;&quot;dropdown-toggle&quot;
          [style.color]&#x3D;&quot;hasFilters &gt; 0 ? &#x27;#00aa00&#x27; : &#x27;inherit&#x27;&quot;&gt;
         &lt;i class&#x3D;&quot;fas fa-filter&quot;&gt;&lt;/i&gt;
@@ -1753,7 +1753,7 @@ import {FilterInfo} from &quot;../utils/filter-info&quot;;
       &lt;div class&#x3D;&quot;d-flex flex-nowrap sort-icon&quot;&gt;
         &lt;div [id]&#x3D;&quot;&#x27;filter-&#x27; + column.id&quot; *ngIf&#x3D;&quot;column.filterRenderer&quot;&gt;
           &lt;a id&#x3D;&quot;filterDropdownToggle&quot;
-             (click)&#x3D;&quot;showFilter()&quot;
+             (click)&#x3D;&quot;$event.stopPropagation(); showFilter();&quot;
              class&#x3D;&quot;dropdown-toggle&quot;
              [style.color]&#x3D;&quot;hasFilters &gt; 0 ? &#x27;#00aa00&#x27; : &#x27;inherit&#x27;&quot;&gt;
             &lt;i class&#x3D;&quot;fas fa-filter&quot;&gt;&lt;/i&gt;
@@ -1928,7 +1928,7 @@ export class ColumnHeaderComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="d-flex flex-nowrap"     (click)="doSort()"     style="width: inherit; align-items: center; padding-left: 8px; margin-top: auto; margin-bottom: auto;">  <span id="header-text"        class="hci-grid-header-text"        (mouseover)="onMouseOver($event)"        (mouseout)="onMouseOut($event)">    {{ column.name }}  </span>  <span id="hidden-header-text" style="visibility: hidden; position: absolute;">    {{ column.name }}  </span>  <div class="d-flex flex-nowrap sort-icon">    <div [id]="\'filter-\' + column.id" *ngIf="column.filterRenderer">      <a id="filterDropdownToggle"         (click)="showFilter()"         class="dropdown-toggle"         [style.color]="hasFilters > 0 ? \'#00aa00\' : \'inherit\'">        <i class="fas fa-filter"></i>      </a>    </div>    <div [id]="\'sort-\' + column.id" *ngIf="column.sortable" style="margin-left: 5px;">      <span *ngIf="asc === 1"><span class="fas fa-arrow-alt-circle-up"></span></span>      <span *ngIf="asc === -1"><span class="fas fa-arrow-alt-circle-down"></span></span>    </div>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="d-flex flex-nowrap"     (click)="doSort()"     style="width: inherit; align-items: center; padding-left: 8px; margin-top: auto; margin-bottom: auto;">  <span id="header-text"        class="hci-grid-header-text"        (mouseover)="onMouseOver($event)"        (mouseout)="onMouseOut($event)">    {{ column.name }}  </span>  <span id="hidden-header-text" style="visibility: hidden; position: absolute;">    {{ column.name }}  </span>  <div class="d-flex flex-nowrap sort-icon">    <div [id]="\'filter-\' + column.id" *ngIf="column.filterRenderer">      <a id="filterDropdownToggle"         (click)="$event.stopPropagation(); showFilter();"         class="dropdown-toggle"         [style.color]="hasFilters > 0 ? \'#00aa00\' : \'inherit\'">        <i class="fas fa-filter"></i>      </a>    </div>    <div [id]="\'sort-\' + column.id" *ngIf="column.sortable" style="margin-left: 5px;">      <span *ngIf="asc === 1"><span class="fas fa-arrow-alt-circle-up"></span></span>      <span *ngIf="asc === -1"><span class="fas fa-arrow-alt-circle-down"></span></span>    </div>  </div></div></div>'
     var COMPONENTS = [{'name': 'BigTextPopup', 'selector': 'hci-bigtext-popup'},{'name': 'ChoiceEditRenderer', 'selector': 'hci-grid-choice-edit'},{'name': 'ColumnHeaderComponent', 'selector': 'hci-column-header'},{'name': 'CompareFilterRenderer', 'selector': 'hci-grid-compare-filter'},{'name': 'ConfigMenuComponent', 'selector': 'hci-grid-config-menu'},{'name': 'ConfigMultiChoiceComponent', 'selector': 'hci-grid-multi-choice'},{'name': 'DateEditRenderer', 'selector': 'hci-grid-date-edit'},{'name': 'GridComponent', 'selector': 'hci-grid'},{'name': 'SelectFilterRenderer', 'selector': 'hci-grid-select-filter'},{'name': 'TextEditRenderer', 'selector': 'hci-grid-text-edit'},{'name': 'TextFilterRenderer', 'selector': 'hci-grid-text-filter'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ColumnHeaderComponent'};
