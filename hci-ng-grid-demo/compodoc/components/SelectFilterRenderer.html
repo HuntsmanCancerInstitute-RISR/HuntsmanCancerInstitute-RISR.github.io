@@ -2266,7 +2266,7 @@ export class SelectFilterRenderer extends FilterRenderer {
     this.filters &#x3D; [];
     for (let choice of this.column.choices) {
       if (choice.selected) {
-        this.filters.push(new FilterInfo(this.column.field, this.column.dataType, choice.value, undefined, &quot;E&quot;, true));
+        this.filters.push(new FilterInfo(this.column.field, this.column.dataType, choice[this.column.choiceValue], undefined, &quot;E&quot;, true));
       }
     }
 
@@ -2302,7 +2302,7 @@ export class SelectFilterRenderer extends FilterRenderer {
     this.changed &#x3D; true;
 
     for (let choice of this.column.choices) {
-      if (choice.value &#x3D;&#x3D;&#x3D; id) {
+      if (choice[this.column.choiceValue] &#x3D;&#x3D;&#x3D; id) {
         choice.selected &#x3D; !choice.selected;
         break;
       }

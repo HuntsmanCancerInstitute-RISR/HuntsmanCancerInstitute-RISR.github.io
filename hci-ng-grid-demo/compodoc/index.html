@@ -774,7 +774,7 @@
 be expected to support.  By default, the grid is simple and basic, but becomes full featured through
 configuration.</code></pre><h2 id="install">Install</h2>
 <pre class="line-numbers"><code class="language-none">&quot;dependencies&quot;: {
-    &quot;hci-ng-grid&quot;: &quot;3.1.x&quot;
+    &quot;hci-ng-grid&quot;: &quot;4.0.0-beta.5&quot;
 }</code></pre><pre class="line-numbers"><code class="language-none">import {GridModule} from &quot;hci-ng-grid&quot;;</code></pre><pre class="line-numbers"><code class="language-none">&#64;NgModule({
     imports: [
         GridModule.forRoot()
@@ -995,6 +995,15 @@ following are examples of built in filters.</p>
 <ul>
 <li>There are only left fixed colums, but some have requested right fixed columns.</li>
 </ul>
+<h2 id="building-and-demo">Building and Demo</h2>
+<p>To run the demo for the first time, run the following commands:</p>
+<pre class="line-numbers"><code class="language-none">npm install
+npm run install-demo
+npm run run-demo</code></pre><p>If package.json doesn&#39;t change, after making a change to the grid run:</p>
+<pre class="line-numbers"><code class="language-none">npm run build
+npm run run-demo</code></pre><p>The grid build automatically copies the transpiled files to the demo/node_modules/hci-ng-grid which mimics pulling
+the dependency from npm.</p>
+<p>To mimic a production build and be able to run the demo anywhere, use &quot;npm run run-demo-prod&quot;.</p>
 
 
 

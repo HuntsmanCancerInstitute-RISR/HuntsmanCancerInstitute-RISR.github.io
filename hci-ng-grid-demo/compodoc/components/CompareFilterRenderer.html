@@ -900,9 +900,10 @@
      [style.width.px]&#x3D;&quot;width&quot;
      [style.background-color]&#x3D;&quot;valid ? &#x27;inherit&#x27; : &#x27;#ffccaa;&#x27;&quot;&gt;
   &lt;div class&#x3D;&quot;parent&quot;&gt;
-    &lt;div class&#x3D;&quot;d-flex flex-nowrap&quot; style&#x3D;&quot;margin-bottom: 10px; align-items: center; width: 100%;&quot;&gt;
+    &lt;div class&#x3D;&quot;d-flex flex-nowrap&quot;
+         style&#x3D;&quot;margin-bottom: 10px; align-items: center; width: 100%;&quot;&gt;
       &lt;select [ngModel]&#x3D;&quot;operator&quot; (ngModelChange)&#x3D;&quot;operatorChange($event)&quot; class&#x3D;&quot;operator&quot;&gt;
-        &lt;option *ngFor&#x3D;&quot;let o of options&quot; [ngValue]&#x3D;&quot;o.value&quot; [selected]&#x3D;&quot;o.value &#x3D;&#x3D;&#x3D; operator.value&quot;&gt;
+        &lt;option *ngFor&#x3D;&quot;let o of options&quot; [ngValue]&#x3D;&quot;o.value&quot; [selected]&#x3D;&quot;o.value &#x3D;&#x3D;&#x3D; operator&quot;&gt;
           {{ o.display }}
         &lt;/option&gt;
       &lt;/select&gt;
@@ -962,10 +963,11 @@
       &lt;/div&gt;
     &lt;/ng-container&gt;
     &lt;ng-container *ngIf&#x3D;&quot;column.dataType.indexOf(&#x27;date-&#x27;) !&#x3D;&#x3D; 0&quot;&gt;
-      &lt;input [ngModel]&#x3D;&quot;filters[0].value&quot;
+      &lt;input *ngIf&#x3D;&quot;filters &amp;&amp; filters.length &#x3D;&#x3D;&#x3D; 1&quot;
+             [ngModel]&#x3D;&quot;filters[0].value&quot;
              (ngModelChange)&#x3D;&quot;valueChange($event)&quot;
              class&#x3D;&quot;value inputs&quot; /&gt;
-      &lt;input *ngIf&#x3D;&quot;operator &#x3D;&#x3D;&#x3D; &#x27;B&#x27; || operator &#x3D;&#x3D;&#x3D; &#x27;O&#x27;&quot;
+      &lt;input *ngIf&#x3D;&quot;filters &amp;&amp; filters.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp; (operator &#x3D;&#x3D;&#x3D; &#x27;B&#x27; || operator &#x3D;&#x3D;&#x3D; &#x27;O&#x27;)&quot;
              [ngModel]&#x3D;&quot;filters[0].highValue&quot;
              (ngModelChange)&#x3D;&quot;highValueChange($event)&quot;
              class&#x3D;&quot;value inputs&quot; /&gt;
@@ -1139,7 +1141,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="166" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:166</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:164</a></div>
                                 </td>
                             </tr>
     
@@ -1176,7 +1178,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="203" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:203</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="201" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:201</a></div>
                                 </td>
                             </tr>
     
@@ -1245,7 +1247,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="256" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:256</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="254" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:254</a></div>
                                 </td>
                             </tr>
     
@@ -1314,7 +1316,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="182" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:182</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="180" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:180</a></div>
                                 </td>
                             </tr>
     
@@ -1383,7 +1385,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="221" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:221</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="219" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:219</a></div>
                                 </td>
                             </tr>
     
@@ -1454,7 +1456,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="188" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:188</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="186" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:186</a></div>
                                 </td>
                             </tr>
     
@@ -1491,7 +1493,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="177" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:177</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="175" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:175</a></div>
                                 </td>
                             </tr>
     
@@ -1560,7 +1562,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="235" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:235</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="233" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:233</a></div>
                                 </td>
                             </tr>
     
@@ -1629,7 +1631,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="270" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:270</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="268" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:268</a></div>
                                 </td>
                             </tr>
     
@@ -2134,7 +2136,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="148" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:148</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:146</a></div>
                                 </td>
                             </tr>
     
@@ -2168,7 +2170,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:152</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:150</a></div>
                                 </td>
                             </tr>
     
@@ -2202,7 +2204,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:151</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:149</a></div>
                                 </td>
                             </tr>
     
@@ -2241,7 +2243,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:154</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:152</a></div>
                                 </td>
                             </tr>
     
@@ -2288,7 +2290,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:156</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:154</a></div>
                                 </td>
                             </tr>
     
@@ -2327,7 +2329,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:149</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="147" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:147</a></div>
                                 </td>
                             </tr>
     
@@ -2366,7 +2368,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="147" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:147</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/grid/column/filterRenderers/compare-filter-renderer.component.ts:145</a></div>
                                 </td>
                             </tr>
     
@@ -2668,14 +2670,10 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, Input, ViewChild} from &quot;@angular/core&quot;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component} from &quot;@angular/core&quot;;
 
-import * as moment from &quot;moment&quot;;
-
-import {Column} from &quot;../column&quot;;
 import {FilterRenderer} from &quot;./filter-renderer&quot;;
 import {FilterInfo} from &quot;../../utils/filter-info&quot;;
-import {NgbDatepicker} from &quot;@ng-bootstrap/ng-bootstrap&quot;;
 
 /**
  * Offers comparison with a few different data types such as numbers and dates.
@@ -2693,9 +2691,10 @@ import {NgbDatepicker} from &quot;@ng-bootstrap/ng-bootstrap&quot;;
          [style.width.px]&#x3D;&quot;width&quot;
          [style.background-color]&#x3D;&quot;valid ? &#x27;inherit&#x27; : &#x27;#ffccaa;&#x27;&quot;&gt;
       &lt;div class&#x3D;&quot;parent&quot;&gt;
-        &lt;div class&#x3D;&quot;d-flex flex-nowrap&quot; style&#x3D;&quot;margin-bottom: 10px; align-items: center; width: 100%;&quot;&gt;
+        &lt;div class&#x3D;&quot;d-flex flex-nowrap&quot;
+             style&#x3D;&quot;margin-bottom: 10px; align-items: center; width: 100%;&quot;&gt;
           &lt;select [ngModel]&#x3D;&quot;operator&quot; (ngModelChange)&#x3D;&quot;operatorChange($event)&quot; class&#x3D;&quot;operator&quot;&gt;
-            &lt;option *ngFor&#x3D;&quot;let o of options&quot; [ngValue]&#x3D;&quot;o.value&quot; [selected]&#x3D;&quot;o.value &#x3D;&#x3D;&#x3D; operator.value&quot;&gt;
+            &lt;option *ngFor&#x3D;&quot;let o of options&quot; [ngValue]&#x3D;&quot;o.value&quot; [selected]&#x3D;&quot;o.value &#x3D;&#x3D;&#x3D; operator&quot;&gt;
               {{ o.display }}
             &lt;/option&gt;
           &lt;/select&gt;
@@ -2755,10 +2754,11 @@ import {NgbDatepicker} from &quot;@ng-bootstrap/ng-bootstrap&quot;;
           &lt;/div&gt;
         &lt;/ng-container&gt;
         &lt;ng-container *ngIf&#x3D;&quot;column.dataType.indexOf(&#x27;date-&#x27;) !&#x3D;&#x3D; 0&quot;&gt;
-          &lt;input [ngModel]&#x3D;&quot;filters[0].value&quot;
+          &lt;input *ngIf&#x3D;&quot;filters &amp;&amp; filters.length &#x3D;&#x3D;&#x3D; 1&quot;
+                 [ngModel]&#x3D;&quot;filters[0].value&quot;
                  (ngModelChange)&#x3D;&quot;valueChange($event)&quot;
                  class&#x3D;&quot;value inputs&quot; /&gt;
-          &lt;input *ngIf&#x3D;&quot;operator &#x3D;&#x3D;&#x3D; &#x27;B&#x27; || operator &#x3D;&#x3D;&#x3D; &#x27;O&#x27;&quot;
+          &lt;input *ngIf&#x3D;&quot;filters &amp;&amp; filters.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp; (operator &#x3D;&#x3D;&#x3D; &#x27;B&#x27; || operator &#x3D;&#x3D;&#x3D; &#x27;O&#x27;)&quot;
                  [ngModel]&#x3D;&quot;filters[0].highValue&quot;
                  (ngModelChange)&#x3D;&quot;highValueChange($event)&quot;
                  class&#x3D;&quot;value inputs&quot; /&gt;
@@ -2977,7 +2977,7 @@ export class CompareFilterRenderer extends FilterRenderer {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="d-flex flex-nowrap"     (mousedown)="stop($event)"     (mouseup)="stop($event)"     (click)="stop($event)"     style="padding: .5rem 0; background-color: white; border: black 1px solid;"     [style.width.px]="width"     [style.background-color]="valid ? \'inherit\' : \'#ffccaa;\'">  <div class="parent">    <div class="d-flex flex-nowrap" style="margin-bottom: 10px; align-items: center; width: 100%;">      <select [ngModel]="operator" (ngModelChange)="operatorChange($event)" class="operator">        <option *ngFor="let o of options" [ngValue]="o.value" [selected]="o.value === operator.value">          {{ o.display }}        </option>      </select>      <div class="d-flex justify-content-end" style="align-items: center; margin-left: auto; margin-right: 10px;">        <div *ngIf="changed" (click)="filter()" class="fade-in-out" style="color: green;">          <i class="fas fa-check-circle fa-lg l-gap"></i>        </div>        <div (click)="valueClear()" style="color: red;">          <i class="fas fa-times-circle fa-lg l-gap"></i>        </div>        <div *ngIf="gridService.linkedGroups"             (click)="toggleShared()"             placement="top"             container="body"             ngbTooltip="Share Filter with other Grids"             [style.color]="shared ? \'green\' : \'red\'">          <i class="fas fa-share-alt-square fa-lg l-gap"></i>        </div>      </div>    </div>    <ng-container *ngIf="column.dataType.indexOf(\'date-\') === 0">      <div class="form-group">        <div class="input-group flex-nowrap" (click)="stop($event)">          <input [ngModel]="lowValue"                 (ngModelChange)="valueChange($event)"                 [placeholder]="column.format"                 [style.color]="filters && !filters[0].valid ? \'red\' : \'inherit\'"                 class="form-control value inputs" />          <!--<div class="input-group-append">            <button class="btn btn-outline-secondary" (click)="dLow.toggle()" type="button">              <i class="fas fa-calendar-alt"></i>            </button>          </div>-->        </div>        <div *ngIf="operator === \'B\' || operator === \'O\'"             class="input-group flex-nowrap">          <input              [ngModel]="highValue"              (ngModelChange)="highValueChange($event)"              [placeholder]="column.format"              class="form-control value inputs" />          <!--          <input ngbDatepicker #d2="ngbDatepicker"                 [ngModel]="highValue"                 (ngModelChange)="highValueChange($event)"                 [minDate]="{year: 1900, month: 1, day: 1}"                 placeholder="yyyy-mm-dd"                 pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"                 class="form-control value inputs" />          <div class="input-group-append">            <button class="btn btn-outline-secondary" (click)="d2.toggle()" type="button">              <i class="fas fa-calendar-alt"></i>            </button>          </div>-->        </div>      </div>    </ng-container>    <ng-container *ngIf="column.dataType.indexOf(\'date-\') !== 0">      <input [ngModel]="filters[0].value"             (ngModelChange)="valueChange($event)"             class="value inputs" />      <input *ngIf="operator === \'B\' || operator === \'O\'"             [ngModel]="filters[0].highValue"             (ngModelChange)="highValueChange($event)"             class="value inputs" />    </ng-container>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="d-flex flex-nowrap"     (mousedown)="stop($event)"     (mouseup)="stop($event)"     (click)="stop($event)"     style="padding: .5rem 0; background-color: white; border: black 1px solid;"     [style.width.px]="width"     [style.background-color]="valid ? \'inherit\' : \'#ffccaa;\'">  <div class="parent">    <div class="d-flex flex-nowrap"         style="margin-bottom: 10px; align-items: center; width: 100%;">      <select [ngModel]="operator" (ngModelChange)="operatorChange($event)" class="operator">        <option *ngFor="let o of options" [ngValue]="o.value" [selected]="o.value === operator">          {{ o.display }}        </option>      </select>      <div class="d-flex justify-content-end" style="align-items: center; margin-left: auto; margin-right: 10px;">        <div *ngIf="changed" (click)="filter()" class="fade-in-out" style="color: green;">          <i class="fas fa-check-circle fa-lg l-gap"></i>        </div>        <div (click)="valueClear()" style="color: red;">          <i class="fas fa-times-circle fa-lg l-gap"></i>        </div>        <div *ngIf="gridService.linkedGroups"             (click)="toggleShared()"             placement="top"             container="body"             ngbTooltip="Share Filter with other Grids"             [style.color]="shared ? \'green\' : \'red\'">          <i class="fas fa-share-alt-square fa-lg l-gap"></i>        </div>      </div>    </div>    <ng-container *ngIf="column.dataType.indexOf(\'date-\') === 0">      <div class="form-group">        <div class="input-group flex-nowrap" (click)="stop($event)">          <input [ngModel]="lowValue"                 (ngModelChange)="valueChange($event)"                 [placeholder]="column.format"                 [style.color]="filters && !filters[0].valid ? \'red\' : \'inherit\'"                 class="form-control value inputs" />          <!--<div class="input-group-append">            <button class="btn btn-outline-secondary" (click)="dLow.toggle()" type="button">              <i class="fas fa-calendar-alt"></i>            </button>          </div>-->        </div>        <div *ngIf="operator === \'B\' || operator === \'O\'"             class="input-group flex-nowrap">          <input              [ngModel]="highValue"              (ngModelChange)="highValueChange($event)"              [placeholder]="column.format"              class="form-control value inputs" />          <!--          <input ngbDatepicker #d2="ngbDatepicker"                 [ngModel]="highValue"                 (ngModelChange)="highValueChange($event)"                 [minDate]="{year: 1900, month: 1, day: 1}"                 placeholder="yyyy-mm-dd"                 pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"                 class="form-control value inputs" />          <div class="input-group-append">            <button class="btn btn-outline-secondary" (click)="d2.toggle()" type="button">              <i class="fas fa-calendar-alt"></i>            </button>          </div>-->        </div>      </div>    </ng-container>    <ng-container *ngIf="column.dataType.indexOf(\'date-\') !== 0">      <input *ngIf="filters && filters.length === 1"             [ngModel]="filters[0].value"             (ngModelChange)="valueChange($event)"             class="value inputs" />      <input *ngIf="filters && filters.length === 1 && (operator === \'B\' || operator === \'O\')"             [ngModel]="filters[0].highValue"             (ngModelChange)="highValueChange($event)"             class="value inputs" />    </ng-container>  </div></div></div>'
     var COMPONENTS = [{'name': 'BigTextPopup', 'selector': 'hci-bigtext-popup'},{'name': 'ChoiceEditRenderer', 'selector': 'hci-grid-choice-edit'},{'name': 'ColumnHeaderComponent', 'selector': 'hci-column-header'},{'name': 'CompareFilterRenderer', 'selector': 'hci-grid-compare-filter'},{'name': 'ConfigMenuComponent', 'selector': 'hci-grid-config-menu'},{'name': 'ConfigMultiChoiceComponent', 'selector': 'hci-grid-multi-choice'},{'name': 'DateEditRenderer', 'selector': 'hci-grid-date-edit'},{'name': 'GridComponent', 'selector': 'hci-grid'},{'name': 'SelectFilterRenderer', 'selector': 'hci-grid-select-filter'},{'name': 'TextEditRenderer', 'selector': 'hci-grid-text-edit'},{'name': 'TextFilterRenderer', 'selector': 'hci-grid-text-filter'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'CompareFilterRenderer'};
