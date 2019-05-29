@@ -774,7 +774,7 @@
 be expected to support.  By default, the grid is simple and basic, but becomes full featured through
 configuration.</code></pre><h2 id="install">Install</h2>
 <pre class="line-numbers"><code class="language-none">&quot;dependencies&quot;: {
-    &quot;hci-ng-grid&quot;: &quot;4.0.0-beta.5&quot;
+    &quot;hci-ng-grid&quot;: &quot;4.0.x&quot;
 }</code></pre><pre class="line-numbers"><code class="language-none">import {GridModule} from &quot;hci-ng-grid&quot;;</code></pre><pre class="line-numbers"><code class="language-none">&#64;NgModule({
     imports: [
         GridModule.forRoot()
@@ -892,7 +892,22 @@ default: true
 True if you want warnings to show in the console.</code></pre><pre class="line-numbers"><code class="language-none">display
 type: string
 default: flow-root
-Sets the display on the root component.  Although you could also do this with style on the grid.</code></pre><h2 id="outputs">Outputs</h2>
+Sets the display on the root component.  Although you could also do this with style on the grid.</code></pre><pre class="line-numbers"><code class="language-none">addNewRowButtonLocation
+type: string
+default: undefined
+Can be &quot;title-bar&quot; or &quot;footer&quot; depending where you want the add new row button to appear.</code></pre><pre class="line-numbers"><code class="language-none">newRowPostCall
+type: (data: newRow) =&gt; Observable&lt;any&gt;
+default: undefined
+Implement your own call to handle creating a new row.  For example, persisting it so the new gets an id created in the database.</code></pre><pre class="line-numbers"><code class="language-none">newRowPostCallSuccess
+type: (newRow: any) =&gt; void
+default: undefined
+Custom command upon successful newRowPostCall().</code></pre><pre class="line-numbers"><code class="language-none">newRowPostCallError
+type: (error: any) =&gt; void
+default: undefined
+Custom error command upon error from newRowPostCall().</code></pre><pre class="line-numbers"><code class="language-none">newRowPostCallFinally
+type: () =&gt; void
+default: undefined
+Custom finally command when newRowPostCall() success or error completes.</code></pre><h2 id="outputs">Outputs</h2>
 <pre class="line-numbers"><code class="language-none">onCellSave
 type: any
 $event: { key: rows[i].key,

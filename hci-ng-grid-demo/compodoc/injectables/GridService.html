@@ -5266,7 +5266,7 @@
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon fa fa-reset"></span>
-                                    <code>setInputDataValue(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                                    <code>setInputDataValue(rowNum: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, field: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
             
@@ -5296,7 +5296,7 @@
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                                <td>key</td>
+                                                                <td>rowNum</td>
                                                                 
                                                                     <td>
                                                                                 <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
@@ -8494,7 +8494,7 @@ export class GridService {
   externalPaging: boolean;
   pageSizes: number[];
   nVisibleRows: number;
-  newRowPostCall: (data: any) &#x3D;&gt; Observable&lt;any&gt;;
+  newRowPostCall: (newRow: any) &#x3D;&gt; Observable&lt;any&gt;;
 
   originalData: Object[];
   preparedData: Row[];
@@ -9414,10 +9414,10 @@ export class GridService {
     }
 
     if (i &#x3D;&#x3D;&#x3D; -1) {
-      this.setInputDataValue(key, this.columns[j].field, newValue);
+      this.setInputDataValue(i, this.columns[j].field, newValue);
       this.valueSubject.next(new Point(i, j));
     } else {
-      this.setInputDataValue(key, this.columns[j].field, newValue);
+      this.setInputDataValue(i, this.columns[j].field, newValue);
       this.valueSubject.next(new Point(i, j));
 
       this.getRow(i).get(j).dirty &#x3D; true;
@@ -9615,12 +9615,12 @@ export class GridService {
    * @param field
    * @param value
    */
-  public setInputDataValue(key: number, field: string, value: any): void {
+  public setInputDataValue(rowNum: number, field: string, value: any): void {
     var fields &#x3D; field.split(&quot;.&quot;);
 
     let obj: Object;
-    if (key) {
-      obj &#x3D; this.originalData[key];
+    if (rowNum !&#x3D;&#x3D; undefined &amp;&amp; rowNum &gt;&#x3D; 0) {
+      obj &#x3D; this.originalData[rowNum];
     } else if (this.newRow) {
       obj &#x3D; this.newRow.data;
     } else {
