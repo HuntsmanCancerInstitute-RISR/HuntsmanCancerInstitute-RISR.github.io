@@ -203,19 +203,13 @@
                                     <a href="./classes/EventMeta.html" >EventMeta</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./classes/ExternalData.html" >ExternalData</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/ExternalInfo.html" >ExternalInfo</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/FilterInfo.html" >FilterInfo</a>
-                                </li>
-                                <li class="link">
                                     <a href="./classes/FilterRenderer.html" >FilterRenderer</a>
                                 </li>
                                 <li class="link">
                                     <a href="./classes/FormatterParser.html" >FormatterParser</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/GroupKeyListener.html" >GroupKeyListener</a>
                                 </li>
                                 <li class="link">
                                     <a href="./classes/HtmlUtil.html" >HtmlUtil</a>
@@ -225,9 +219,6 @@
                                 </li>
                                 <li class="link">
                                     <a href="./classes/NumberFormatter.html" >NumberFormatter</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/PageInfo.html" >PageInfo</a>
                                 </li>
                                 <li class="link">
                                     <a href="./classes/Point.html" >Point</a>
@@ -248,7 +239,10 @@
                                     <a href="./classes/RowDblClickListener.html" >RowDblClickListener</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./classes/SortInfo.html" >SortInfo</a>
+                                    <a href="./classes/RowGroup.html" >RowGroup</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/RowGroupView.html" >RowGroupView</a>
                                 </li>
                         </ul>
                     </li>
@@ -578,19 +572,13 @@
                                            <a href="./classes/EventMeta.html" >EventMeta</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./classes/ExternalData.html" >ExternalData</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/ExternalInfo.html" >ExternalInfo</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/FilterInfo.html" >FilterInfo</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="./classes/FilterRenderer.html" >FilterRenderer</a>
                                        </li>
                                        <li class="link">
                                            <a href="./classes/FormatterParser.html" >FormatterParser</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/GroupKeyListener.html" >GroupKeyListener</a>
                                        </li>
                                        <li class="link">
                                            <a href="./classes/HtmlUtil.html" >HtmlUtil</a>
@@ -600,9 +588,6 @@
                                        </li>
                                        <li class="link">
                                            <a href="./classes/NumberFormatter.html" >NumberFormatter</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/PageInfo.html" >PageInfo</a>
                                        </li>
                                        <li class="link">
                                            <a href="./classes/Point.html" >Point</a>
@@ -623,7 +608,10 @@
                                            <a href="./classes/RowDblClickListener.html" >RowDblClickListener</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./classes/SortInfo.html" >SortInfo</a>
+                                           <a href="./classes/RowGroup.html" >RowGroup</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/RowGroupView.html" >RowGroupView</a>
                                        </li>
                                </ul>
                            </li>
@@ -774,7 +762,7 @@
 be expected to support.  By default, the grid is simple and basic, but becomes full featured through
 configuration.</code></pre><h2 id="install">Install</h2>
 <pre class="line-numbers"><code class="language-none">&quot;dependencies&quot;: {
-    &quot;hci-ng-grid&quot;: &quot;4.0.x&quot;
+    &quot;hci-ng-grid&quot;: &quot;5.0.0-beta.2&quot;
 }</code></pre><pre class="line-numbers"><code class="language-none">import {GridModule} from &quot;hci-ng-grid&quot;;</code></pre><pre class="line-numbers"><code class="language-none">&#64;NgModule({
     imports: [
         GridModule.forRoot()
@@ -856,7 +844,10 @@ A list of column names that should be used to group rows together.</code></pre><
 groupByCollapsed
 type: boolean
 default: true
-The state for grouped rows if those rows in a group should be hidden or shown by default.</code></pre><pre class="line-numbers"><code class="language-none">externalFiltering
+The state for grouped rows if those rows in a group should be hidden or shown by default.</code></pre><pre class="line-numbers"><code class="language-none">externalGrouping
+type: boolean
+default: false
+True if grouping should be handled by the external data call.  This forces filtering, sorting and paging to also be external.</code></pre><pre class="line-numbers"><code class="language-none">externalFiltering
 type: boolean
 default: false
 True if filtering should be handled by the external data call.</code></pre><pre class="line-numbers"><code class="language-none">externalSorting
@@ -865,7 +856,7 @@ default: false
 True if sorting should be handled by the external data call.</code></pre><pre class="line-numbers"><code class="language-none">externalPaging
 type: boolean
 default: false
-True if paging should be handled by the external data call.</code></pre><pre class="line-numbers"><code class="language-none">pageSize
+True if paging should be handled by the external data call.  This forces filtering, sorting and paging to be external.</code></pre><pre class="line-numbers"><code class="language-none">pageSize
 type: number
 default: undefined
 The number of rows per page.  If not specified it will show all of them.</code></pre><pre class="line-numbers"><code class="language-none">pageSizes
