@@ -8,750 +8,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-	    <link rel="stylesheet" href="./styles/style.css">
+	      <link rel="stylesheet" href="./styles/style.css">
     </head>
     <body>
 
         <div class="navbar navbar-default navbar-fixed-top visible-xs">
             <a href="./" class="navbar-brand">&#x27;hci-ng-grid&#x27;</a>
-            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-            <div id="book-search-input" role="search">
-                <input type="text" placeholder="Type to search">
-            </div>
-            <nav>
-            
-                <ul class="list">
-            
-                    <li class="title">
-                        <a href="./index.html">&#x27;hci-ng-grid&#x27;</a>
-                    </li>
-            
-                    <li class="divider"></li>
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
-                        <ul class="links">
-                                <li class="link">
-                                    <a 
-                                         href="./overview.html" 
-                                        
-                                         href="./overview.html" 
-                                         class="active" >
-                                        <span class="fa fa-fw fa-th"></span>Overview
-                                    </a>
-                                </li>
-                                <li class="link">
-                                  <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                </li>
-                                <li class="link">
-                                        <a href="./changelog.html"
-                                    >
-                                        <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
-                                    </a>
-                                </li>
-                                <li class="link">
-                                        <a href="./license.html"
-                                    >
-                                        <span class="fa fa-fw fa-file-text-o"></span>LICENSE
-                                    </a>
-                                </li>
-                                <li class="link">
-                                    <a href="./dependencies.html"
-                                        
-                                        >
-                                        <span class="fa fa-fw fa-list"></span>Dependencies
-                                    </a>
-                                </li>
-                        </ul>
-                    </li>
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="./modules.html" >
-                            <div class="menu-toggler linked" data-toggle="collapse"
-                                    data-target="#xs-modules-links"
-                            >
-                                <span class="fa fa-fw fa-archive"></span>
-                                <span class="link-name">Modules</span>
-                                <span class="fa fa-angle-down"></span>
-                            </div>
-                        </a>
-                        <ul class="links collapse "
-                                id="xs-modules-links"
-                            >
-                                <li class="link">
-                                    <a href="./modules/GridModule.html" >GridModule</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse"
-                                data-target="#xs-components-links"
-                            >
-                            <span class="fa fa-fw fa-cogs"></span>
-                            <span>Components</span>
-                            <span class="fa fa-angle-down"></span>
-                        </div>
-                        <ul class="links collapse "
-                                id="xs-components-links"
-                            >
-                                <li class="link">
-                                    <a href="./components/BigTextPopup.html" >BigTextPopup</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/ChoiceEditRenderer.html" >ChoiceEditRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/ColumnHeaderComponent.html" >ColumnHeaderComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/CompareFilterRenderer.html" >CompareFilterRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/ConfigMenuComponent.html" >ConfigMenuComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/ConfigMultiChoiceComponent.html" >ConfigMultiChoiceComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/DateEditRenderer.html" >DateEditRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/GridComponent.html" >GridComponent</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/SelectFilterRenderer.html" >SelectFilterRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/TextEditRenderer.html" >TextEditRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./components/TextFilterRenderer.html" >TextFilterRenderer</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-            
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse"
-                                data-target="#xs-classes-links"
-                            >
-                            <span class="fa fa-fw fa-file-code-o"></span>
-                            <span>Classes</span>
-                            <span class="fa fa-angle-down"></span>
-                        </div>
-                        <ul class="links collapse "
-                                id="xs-classes-links"
-                            >
-                                <li class="link">
-                                    <a href="./classes/Cell.html" >Cell</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/CellEditRenderer.html" >CellEditRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/CellHoverPopupListener.html" >CellHoverPopupListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/CellNumberRangeView.html" >CellNumberRangeView</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/CellPopupRenderer.html" >CellPopupRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/CellTextView.html" >CellTextView</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/CheckRowSelectView.html" >CheckRowSelectView</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/ClickCellEditListener.html" >ClickCellEditListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/ClickRowSelectListener.html" >ClickRowSelectListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/ClickView.html" >ClickView</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/ClickViewListener.html" >ClickViewListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/Column.html" >Column</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/ColumnDndListener.html" >ColumnDndListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/DateIso8601Formatter.html" >DateIso8601Formatter</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/DateMsFormatter.html" >DateMsFormatter</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/EmptyFactory.html" >EmptyFactory</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/EventListener.html" >EventListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/EventMeta.html" >EventMeta</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/FilterRenderer.html" >FilterRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/FormatterParser.html" >FormatterParser</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/GroupKeyListener.html" >GroupKeyListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/HtmlUtil.html" >HtmlUtil</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/InjectableFactory.html" >InjectableFactory</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/NumberFormatter.html" >NumberFormatter</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/Point.html" >Point</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/Range.html" >Range</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/RangeSelectListener.html" >RangeSelectListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/Row.html" >Row</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/RowChange.html" >RowChange</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/RowDblClickListener.html" >RowDblClickListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/RowGroup.html" >RowGroup</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/RowGroupView.html" >RowGroupView</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse"
-                                data-target="#xs-injectables-links"
-                            >
-                            <span class="fa fa-fw fa-long-arrow-down"></span>
-                            <span>Injectables</span>
-                            <span class="fa fa-angle-down"></span>
-                        </div>
-                        <ul class="links collapse "
-                                id="xs-injectables-links"
-                            >
-                                <li class="link">
-                                    <a href="./injectables/GridEventService.html" >GridEventService</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./injectables/GridGlobalService.html" >GridGlobalService</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./injectables/GridMessageService.html" >GridMessageService</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./injectables/GridService.html" >GridService</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-            
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse"
-                                data-target="#xs-interfaces-links"
-                            >
-                            <span class="fa fa-fw fa-info"></span>
-                            <span>Interfaces</span>
-                            <span class="fa fa-angle-down"></span>
-                        </div>
-                        <ul class="links collapse "
-                                id="xs-interfaces-links"
-                            >
-                                <li class="link">
-                                    <a href="./interfaces/CellViewRenderer.html" >CellViewRenderer</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/ClickListener.html" >ClickListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/DblClickListener.html" >DblClickListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/Dictionary.html" >Dictionary</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/EmptyConstructor.html" >EmptyConstructor</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/EventListenerArg.html" >EventListenerArg</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/InjectableConstructor.html" >InjectableConstructor</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/MouseDownListener.html" >MouseDownListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/MouseDragListener.html" >MouseDragListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/MouseOutListener.html" >MouseOutListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/MouseOverListener.html" >MouseOverListener</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./interfaces/MouseUpListener.html" >MouseUpListener</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse"
-                                data-target="#xs-pipes-links"
-                            >
-                            <span class="fa fa-fw fa-plus"></span>
-                            <span>Pipes</span>
-                            <span class="fa fa-angle-down"></span>
-                        </div>
-                        <ul class="links collapse "
-                                id="xs-pipes-links"
-                            >
-                                <li class="link">
-                                    <a href="./pipes/IsFixedPipe.html" >IsFixedPipe</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./pipes/IsGroupPipe.html" >IsGroupPipe</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./pipes/IsRowVisiblePipe.html" >IsRowVisiblePipe</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./pipes/IsVisiblePipe.html" >IsVisiblePipe</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-                    <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse"
-                                data-target="#xs-miscellaneous-links"
-                            >
-                            <span class="fa fa-fw fa-cubes"></span>
-                            <span>Miscellaneous</span>
-                            <span class="fa fa-angle-down"></span>
-                        </div>
-                        <ul class="links collapse "
-                                id="xs-miscellaneous-links"
-                            >
-                                <li class="link">
-                                  <a href="./miscellaneous/variables.html" data-type="entity-link" >Variables</a>
-                                </li>
-                        </ul>
-                    </li>
-            
-            
-                    <li class="chapter">
-                        <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
-                    </li>
-            
-                    <li class="divider"></li>
-                    <li class="copyright">
-                            Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
-                                        <img src="./images/compodoc-vectorise.svg" class="img-responsive">
-                            </a>
-                    </li>
-            
-                </ul>
-            
-            </nav>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
            <div class="row main">
                <div class="hidden-xs menu">
-                   <nav>
-                   
-                       <ul class="list">
-                   
-                           <li class="title">
-                               <a href="./index.html">&#x27;hci-ng-grid&#x27;</a>
-                           </li>
-                   
-                           <li class="divider"></li>
-                   
-                               <div id="book-search-input" role="search">
-                                   <input type="text" placeholder="Type to search">
-                               </div>
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="./index.html"><span class="fa fa-home"></span>Getting started</a>
-                               <ul class="links">
-                                       <li class="link">
-                                           <a 
-                                                href="./overview.html" 
-                                               
-                                                href="./overview.html" 
-                                                class="active" >
-                                               <span class="fa fa-fw fa-th"></span>Overview
-                                           </a>
-                                       </li>
-                                       <li class="link">
-                                         <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
-                                       </li>
-                                       <li class="link">
-                                               <a href="./changelog.html"
-                                           >
-                                               <span class="fa fa-fw fa-file-text-o"></span>CHANGELOG
-                                           </a>
-                                       </li>
-                                       <li class="link">
-                                               <a href="./license.html"
-                                           >
-                                               <span class="fa fa-fw fa-file-text-o"></span>LICENSE
-                                           </a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./dependencies.html"
-                                               
-                                               >
-                                               <span class="fa fa-fw fa-list"></span>Dependencies
-                                           </a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="./modules.html" >
-                                   <div class="menu-toggler linked" data-toggle="collapse"
-                                           data-target="#modules-links"
-                                   >
-                                       <span class="fa fa-fw fa-archive"></span>
-                                       <span class="link-name">Modules</span>
-                                       <span class="fa fa-angle-down"></span>
-                                   </div>
-                               </a>
-                               <ul class="links collapse "
-                                       id="modules-links"
-                   >
-                                       <li class="link">
-                                           <a href="./modules/GridModule.html" >GridModule</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                           <li class="chapter">
-                               <div class="simple menu-toggler" data-toggle="collapse"
-                                       data-target="#components-links"
-                   >
-                                   <span class="fa fa-fw fa-cogs"></span>
-                                   <span>Components</span>
-                                   <span class="fa fa-angle-down"></span>
-                               </div>
-                               <ul class="links collapse "
-                                       id="components-links"
-                   >
-                                       <li class="link">
-                                           <a href="./components/BigTextPopup.html" >BigTextPopup</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/ChoiceEditRenderer.html" >ChoiceEditRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/ColumnHeaderComponent.html" >ColumnHeaderComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/CompareFilterRenderer.html" >CompareFilterRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/ConfigMenuComponent.html" >ConfigMenuComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/ConfigMultiChoiceComponent.html" >ConfigMultiChoiceComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/DateEditRenderer.html" >DateEditRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/GridComponent.html" >GridComponent</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/SelectFilterRenderer.html" >SelectFilterRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/TextEditRenderer.html" >TextEditRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./components/TextFilterRenderer.html" >TextFilterRenderer</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                   
-                           <li class="chapter">
-                               <div class="simple menu-toggler" data-toggle="collapse"
-                                       data-target="#classes-links"
-                   >
-                                   <span class="fa fa-fw fa-file-code-o"></span>
-                                   <span>Classes</span>
-                                   <span class="fa fa-angle-down"></span>
-                               </div>
-                               <ul class="links collapse "
-                                       id="classes-links"
-                   >
-                                       <li class="link">
-                                           <a href="./classes/Cell.html" >Cell</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/CellEditRenderer.html" >CellEditRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/CellHoverPopupListener.html" >CellHoverPopupListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/CellNumberRangeView.html" >CellNumberRangeView</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/CellPopupRenderer.html" >CellPopupRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/CellTextView.html" >CellTextView</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/CheckRowSelectView.html" >CheckRowSelectView</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/ClickCellEditListener.html" >ClickCellEditListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/ClickRowSelectListener.html" >ClickRowSelectListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/ClickView.html" >ClickView</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/ClickViewListener.html" >ClickViewListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/Column.html" >Column</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/ColumnDndListener.html" >ColumnDndListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/DateIso8601Formatter.html" >DateIso8601Formatter</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/DateMsFormatter.html" >DateMsFormatter</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/EmptyFactory.html" >EmptyFactory</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/EventListener.html" >EventListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/EventMeta.html" >EventMeta</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/FilterRenderer.html" >FilterRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/FormatterParser.html" >FormatterParser</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/GroupKeyListener.html" >GroupKeyListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/HtmlUtil.html" >HtmlUtil</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/InjectableFactory.html" >InjectableFactory</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/NumberFormatter.html" >NumberFormatter</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/Point.html" >Point</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/Range.html" >Range</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/RangeSelectListener.html" >RangeSelectListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/Row.html" >Row</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/RowChange.html" >RowChange</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/RowDblClickListener.html" >RowDblClickListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/RowGroup.html" >RowGroup</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/RowGroupView.html" >RowGroupView</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                           <li class="chapter">
-                               <div class="simple menu-toggler" data-toggle="collapse"
-                                       data-target="#injectables-links"
-                   >
-                                   <span class="fa fa-fw fa-long-arrow-down"></span>
-                                   <span>Injectables</span>
-                                   <span class="fa fa-angle-down"></span>
-                               </div>
-                               <ul class="links collapse "
-                                       id="injectables-links"
-                   >
-                                       <li class="link">
-                                           <a href="./injectables/GridEventService.html" >GridEventService</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./injectables/GridGlobalService.html" >GridGlobalService</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./injectables/GridMessageService.html" >GridMessageService</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./injectables/GridService.html" >GridService</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                   
-                           <li class="chapter">
-                               <div class="simple menu-toggler" data-toggle="collapse"
-                                       data-target="#interfaces-links"
-                   >
-                                   <span class="fa fa-fw fa-info"></span>
-                                   <span>Interfaces</span>
-                                   <span class="fa fa-angle-down"></span>
-                               </div>
-                               <ul class="links collapse "
-                                       id="interfaces-links"
-                   >
-                                       <li class="link">
-                                           <a href="./interfaces/CellViewRenderer.html" >CellViewRenderer</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/ClickListener.html" >ClickListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/DblClickListener.html" >DblClickListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/Dictionary.html" >Dictionary</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/EmptyConstructor.html" >EmptyConstructor</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/EventListenerArg.html" >EventListenerArg</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/InjectableConstructor.html" >InjectableConstructor</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/MouseDownListener.html" >MouseDownListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/MouseDragListener.html" >MouseDragListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/MouseOutListener.html" >MouseOutListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/MouseOverListener.html" >MouseOverListener</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./interfaces/MouseUpListener.html" >MouseUpListener</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                           <li class="chapter">
-                               <div class="simple menu-toggler" data-toggle="collapse"
-                                       data-target="#pipes-links"
-                   >
-                                   <span class="fa fa-fw fa-plus"></span>
-                                   <span>Pipes</span>
-                                   <span class="fa fa-angle-down"></span>
-                               </div>
-                               <ul class="links collapse "
-                                       id="pipes-links"
-                   >
-                                       <li class="link">
-                                           <a href="./pipes/IsFixedPipe.html" >IsFixedPipe</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./pipes/IsGroupPipe.html" >IsGroupPipe</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./pipes/IsRowVisiblePipe.html" >IsRowVisiblePipe</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./pipes/IsVisiblePipe.html" >IsVisiblePipe</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                           <li class="chapter">
-                               <div class="simple menu-toggler" data-toggle="collapse"
-                                       data-target="#miscellaneous-links"
-                   >
-                                   <span class="fa fa-fw fa-cubes"></span>
-                                   <span>Miscellaneous</span>
-                                   <span class="fa fa-angle-down"></span>
-                               </div>
-                               <ul class="links collapse "
-                                       id="miscellaneous-links"
-                   >
-                                       <li class="link">
-                                         <a href="./miscellaneous/variables.html" data-type="entity-link" >Variables</a>
-                                       </li>
-                               </ul>
-                           </li>
-                   
-                   
-                           <li class="chapter">
-                               <a data-type="chapter-link" href="./coverage.html" ><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
-                           </li>
-                   
-                           <li class="divider"></li>
-                           <li class="copyright">
-                                   Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
-                                               <img src="./images/compodoc-vectorise.svg" class="img-responsive">
-                                   </a>
-                           </li>
-                   
-                       </ul>
-                   
-                   </nav>
+                   <compodoc-menu mode="normal"></compodoc-menu>
                </div>
+               <!-- START CONTENT -->
                <div class="content overview">
                    <div class="content-data">
 
@@ -759,347 +34,337 @@
 <ol class="breadcrumb">
     <li>Overview</li>
 </ol>
-            <div class="text-center module-graph-container">
-                <div id="module-graph-svg">
-                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+  
+<div class="text-center module-graph-container">
+    <div id="module-graph-svg">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Generated by graphviz version 2.40.1 (20161225.0304)
  -->
 <!-- Title: dependencies Pages: 1 -->
-<svg width="2169pt" height="349pt"
- viewBox="0.00 0.00 2169.00 349.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="2037pt" height="349pt"
+ viewBox="0.00 0.00 2037.00 349.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 345)">
 <title>dependencies</title>
-<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-345 2165,-345 2165,4 -4,4"/>
-<text text-anchor="start" x="1059.5091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
-<polygon fill="#ffffb3" stroke="transparent" points="846.5,-10 846.5,-30 866.5,-30 866.5,-10 846.5,-10"/>
-<text text-anchor="start" x="870.129" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
-<polygon fill="#8dd3c7" stroke="transparent" points="959.5,-10 959.5,-30 979.5,-30 979.5,-10 959.5,-10"/>
-<text text-anchor="start" x="983.2251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
-<polygon fill="#80b1d3" stroke="transparent" points="1045.5,-10 1045.5,-30 1065.5,-30 1065.5,-10 1045.5,-10"/>
-<text text-anchor="start" x="1069.2812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
-<polygon fill="#fdb462" stroke="transparent" points="1142.5,-10 1142.5,-30 1162.5,-30 1162.5,-10 1142.5,-10"/>
-<text text-anchor="start" x="1166.1732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
-<polygon fill="#fb8072" stroke="transparent" points="1238.5,-10 1238.5,-30 1258.5,-30 1258.5,-10 1238.5,-10"/>
-<text text-anchor="start" x="1262.2258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-345 2033,-345 2033,4 -4,4"/>
+<text text-anchor="start" x="993.5091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
+<polygon fill="#ffffb3" stroke="transparent" points="780.5,-10 780.5,-30 800.5,-30 800.5,-10 780.5,-10"/>
+<text text-anchor="start" x="804.129" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
+<polygon fill="#8dd3c7" stroke="transparent" points="893.5,-10 893.5,-30 913.5,-30 913.5,-10 893.5,-10"/>
+<text text-anchor="start" x="917.2251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
+<polygon fill="#80b1d3" stroke="transparent" points="979.5,-10 979.5,-30 999.5,-30 999.5,-10 979.5,-10"/>
+<text text-anchor="start" x="1003.2812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
+<polygon fill="#fdb462" stroke="transparent" points="1076.5,-10 1076.5,-30 1096.5,-30 1096.5,-10 1076.5,-10"/>
+<text text-anchor="start" x="1100.1732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
+<polygon fill="#fb8072" stroke="transparent" points="1172.5,-10 1172.5,-30 1192.5,-30 1192.5,-10 1172.5,-10"/>
+<text text-anchor="start" x="1196.2258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
 <g id="clust1" class="cluster">
 <title>cluster_GridModule</title>
-<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-333 2153,-333 2153,-70 8,-70"/>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-333 2021,-333 2021,-70 8,-70"/>
 </g>
 <g id="clust2" class="cluster">
 <title>cluster_GridModule_declarations</title>
-<polygon fill="none" stroke="#000000" points="16,-143 16,-195 2145,-195 2145,-143 16,-143"/>
+<polygon fill="none" stroke="#000000" points="16,-143 16,-195 2013,-195 2013,-143 16,-143"/>
 </g>
-<g id="clust3" class="cluster">
+<g id="clust9" class="cluster">
 <title>cluster_GridModule_GridComponent_providers</title>
-<polygon fill="none" stroke="#000000" points="1634,-78 1634,-130 2145,-130 2145,-78 1634,-78"/>
+<polygon fill="none" stroke="#000000" points="666,-78 666,-130 1177,-130 1177,-78 666,-78"/>
 </g>
-<g id="clust19" class="cluster">
+<g id="clust18" class="cluster">
 <title>cluster_GridModule_exports</title>
-<polygon fill="none" stroke="#000000" points="1121,-273 1121,-325 1247,-325 1247,-273 1121,-273"/>
-</g>
-<!-- GridComponent -->
-<g id="node1" class="node">
-<title>GridComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="2137.4902,-187 2030.5098,-187 2030.5098,-151 2137.4902,-151 2137.4902,-187"/>
-<text text-anchor="middle" x="2084" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridComponent</text>
-</g>
-<!-- GridModule -->
-<g id="node16" class="node">
-<title>GridModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="1226.7079,-252 1223.7079,-256 1202.7079,-256 1199.7079,-252 1141.2921,-252 1141.2921,-216 1226.7079,-216 1226.7079,-252"/>
-<text text-anchor="middle" x="1184" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridModule</text>
-</g>
-<!-- GridComponent&#45;&gt;GridModule -->
-<g id="edge1" class="edge">
-<title>GridComponent&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M2084,-187.3228C2084,-210.6602 2084,-248 2084,-248 2084,-248 1236.8034,-248 1236.8034,-248"/>
-<polygon fill="#000000" stroke="#000000" points="1236.8034,-244.5001 1226.8034,-248 1236.8034,-251.5001 1236.8034,-244.5001"/>
-</g>
-<!-- ColumnHeaderComponent -->
-<g id="node2" class="node">
-<title>ColumnHeaderComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="2012.3613,-187 1845.6387,-187 1845.6387,-151 2012.3613,-151 2012.3613,-187"/>
-<text text-anchor="middle" x="1929" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">ColumnHeaderComponent</text>
-</g>
-<!-- ColumnHeaderComponent&#45;&gt;GridModule -->
-<g id="edge5" class="edge">
-<title>ColumnHeaderComponent&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M1929,-187.2921C1929,-209.2057 1929,-243 1929,-243 1929,-243 1236.7302,-243 1236.7302,-243"/>
-<polygon fill="#000000" stroke="#000000" points="1236.7303,-239.5001 1226.7302,-243 1236.7302,-246.5001 1236.7303,-239.5001"/>
-</g>
-<!-- IsVisiblePipe -->
-<g id="node3" class="node">
-<title>IsVisiblePipe</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1827.9316,-187 1736.0684,-187 1736.0684,-151 1827.9316,-151 1827.9316,-187"/>
-<text text-anchor="middle" x="1782" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">IsVisiblePipe</text>
-</g>
-<!-- IsVisiblePipe&#45;&gt;GridModule -->
-<g id="edge6" class="edge">
-<title>IsVisiblePipe&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M1782,-187.0267C1782,-207.7672 1782,-239 1782,-239 1782,-239 1237.0067,-239 1237.0067,-239"/>
-<polygon fill="#000000" stroke="#000000" points="1237.0067,-235.5001 1227.0067,-239 1237.0067,-242.5001 1237.0067,-235.5001"/>
-</g>
-<!-- IsGroupPipe -->
-<g id="node4" class="node">
-<title>IsGroupPipe</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1718.2605,-187 1631.7395,-187 1631.7395,-151 1718.2605,-151 1718.2605,-187"/>
-<text text-anchor="middle" x="1675" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">IsGroupPipe</text>
-</g>
-<!-- IsGroupPipe&#45;&gt;GridModule -->
-<g id="edge7" class="edge">
-<title>IsGroupPipe&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M1675,-187.1061C1675,-206.3391 1675,-234 1675,-234 1675,-234 1236.7141,-234 1236.7141,-234"/>
-<polygon fill="#000000" stroke="#000000" points="1236.7141,-230.5001 1226.7141,-234 1236.7141,-237.5001 1236.7141,-230.5001"/>
-</g>
-<!-- IsFixedPipe -->
-<g id="node5" class="node">
-<title>IsFixedPipe</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1613.3809,-187 1530.6191,-187 1530.6191,-151 1613.3809,-151 1613.3809,-187"/>
-<text text-anchor="middle" x="1572" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">IsFixedPipe</text>
-</g>
-<!-- IsFixedPipe&#45;&gt;GridModule -->
-<g id="edge8" class="edge">
-<title>IsFixedPipe&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M1572,-187.302C1572,-205.2699 1572,-230 1572,-230 1572,-230 1236.6327,-230 1236.6327,-230"/>
-<polygon fill="#000000" stroke="#000000" points="1236.6327,-226.5001 1226.6327,-230 1236.6326,-233.5001 1236.6327,-226.5001"/>
-</g>
-<!-- IsRowVisiblePipe -->
-<g id="node6" class="node">
-<title>IsRowVisiblePipe</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1512.8739,-187 1395.1261,-187 1395.1261,-151 1512.8739,-151 1512.8739,-187"/>
-<text text-anchor="middle" x="1454" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">IsRowVisiblePipe</text>
-</g>
-<!-- IsRowVisiblePipe&#45;&gt;GridModule -->
-<g id="edge9" class="edge">
-<title>IsRowVisiblePipe&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M1454,-187.027C1454,-203.3976 1454,-225 1454,-225 1454,-225 1236.7823,-225 1236.7823,-225"/>
-<polygon fill="#000000" stroke="#000000" points="1236.7823,-221.5001 1226.7823,-225 1236.7823,-228.5001 1236.7823,-221.5001"/>
-</g>
-<!-- TextEditRenderer -->
-<g id="node7" class="node">
-<title>TextEditRenderer</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1377.2936,-187 1260.7064,-187 1260.7064,-151 1377.2936,-151 1377.2936,-187"/>
-<text text-anchor="middle" x="1319" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">TextEditRenderer</text>
-</g>
-<!-- TextEditRenderer&#45;&gt;GridModule -->
-<g id="edge10" class="edge">
-<title>TextEditRenderer&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M1319,-187.1871C1319,-202.1824 1319,-221 1319,-221 1319,-221 1236.7148,-221 1236.7148,-221"/>
-<polygon fill="#000000" stroke="#000000" points="1236.7149,-217.5001 1226.7148,-221 1236.7148,-224.5001 1236.7149,-217.5001"/>
-</g>
-<!-- DateEditRenderer -->
-<g id="node8" class="node">
-<title>DateEditRenderer</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1242.5618,-187 1125.4382,-187 1125.4382,-151 1242.5618,-151 1242.5618,-187"/>
-<text text-anchor="middle" x="1184" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">DateEditRenderer</text>
-</g>
-<!-- DateEditRenderer&#45;&gt;GridModule -->
-<g id="edge11" class="edge">
-<title>DateEditRenderer&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M1184,-187.1061C1184,-187.1061 1184,-205.991 1184,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="1180.5001,-205.9909 1184,-215.991 1187.5001,-205.991 1180.5001,-205.9909"/>
-</g>
-<!-- ChoiceEditRenderer -->
-<g id="node9" class="node">
-<title>ChoiceEditRenderer</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1107.2921,-187 976.7079,-187 976.7079,-151 1107.2921,-151 1107.2921,-187"/>
-<text text-anchor="middle" x="1042" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">ChoiceEditRenderer</text>
-</g>
-<!-- ChoiceEditRenderer&#45;&gt;GridModule -->
-<g id="edge12" class="edge">
-<title>ChoiceEditRenderer&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M1042,-187.1871C1042,-202.1824 1042,-221 1042,-221 1042,-221 1131.3953,-221 1131.3953,-221"/>
-<polygon fill="#000000" stroke="#000000" points="1131.3954,-224.5001 1141.3953,-221 1131.3953,-217.5001 1131.3954,-224.5001"/>
-</g>
-<!-- TextFilterRenderer -->
-<g id="node10" class="node">
-<title>TextFilterRenderer</title>
-<polygon fill="#ffffb3" stroke="#000000" points="958.7893,-187 835.2107,-187 835.2107,-151 958.7893,-151 958.7893,-187"/>
-<text text-anchor="middle" x="897" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">TextFilterRenderer</text>
-</g>
-<!-- TextFilterRenderer&#45;&gt;GridModule -->
-<g id="edge13" class="edge">
-<title>TextFilterRenderer&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M897,-187.027C897,-203.3976 897,-225 897,-225 897,-225 1131.3431,-225 1131.3431,-225"/>
-<polygon fill="#000000" stroke="#000000" points="1131.3431,-228.5001 1141.3431,-225 1131.3431,-221.5001 1131.3431,-228.5001"/>
-</g>
-<!-- SelectFilterRenderer -->
-<g id="node11" class="node">
-<title>SelectFilterRenderer</title>
-<polygon fill="#ffffb3" stroke="#000000" points="816.8389,-187 685.1611,-187 685.1611,-151 816.8389,-151 816.8389,-187"/>
-<text text-anchor="middle" x="751" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">SelectFilterRenderer</text>
-</g>
-<!-- SelectFilterRenderer&#45;&gt;GridModule -->
-<g id="edge14" class="edge">
-<title>SelectFilterRenderer&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M751,-187.302C751,-205.2699 751,-230 751,-230 751,-230 1131.2973,-230 1131.2973,-230"/>
-<polygon fill="#000000" stroke="#000000" points="1131.2973,-233.5001 1141.2973,-230 1131.2972,-226.5001 1131.2973,-233.5001"/>
-</g>
-<!-- CompareFilterRenderer -->
-<g id="node12" class="node">
-<title>CompareFilterRenderer</title>
-<polygon fill="#ffffb3" stroke="#000000" points="667.4482,-187 518.5518,-187 518.5518,-151 667.4482,-151 667.4482,-187"/>
-<text text-anchor="middle" x="593" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">CompareFilterRenderer</text>
-</g>
-<!-- CompareFilterRenderer&#45;&gt;GridModule -->
-<g id="edge15" class="edge">
-<title>CompareFilterRenderer&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M593,-187.1061C593,-206.3391 593,-234 593,-234 593,-234 1131.0207,-234 1131.0207,-234"/>
-<polygon fill="#000000" stroke="#000000" points="1131.0207,-237.5001 1141.0207,-234 1131.0206,-230.5001 1131.0207,-237.5001"/>
+<polygon fill="none" stroke="#000000" points="835,-273 835,-325 961,-325 961,-273 835,-273"/>
 </g>
 <!-- BigTextPopup -->
-<g id="node13" class="node">
+<g id="node1" class="node">
 <title>BigTextPopup</title>
-<polygon fill="#ffffb3" stroke="#000000" points="500.6682,-187 403.3318,-187 403.3318,-151 500.6682,-151 500.6682,-187"/>
-<text text-anchor="middle" x="452" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">BigTextPopup</text>
+<polygon fill="#ffffb3" stroke="#000000" points="2004.6682,-187 1907.3318,-187 1907.3318,-151 2004.6682,-151 2004.6682,-187"/>
+<text text-anchor="middle" x="1956" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">BigTextPopup</text>
+</g>
+<!-- GridModule -->
+<g id="node15" class="node">
+<title>GridModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="940.7079,-252 937.7079,-256 916.7079,-256 913.7079,-252 855.2921,-252 855.2921,-216 940.7079,-216 940.7079,-252"/>
+<text text-anchor="middle" x="898" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridModule</text>
 </g>
 <!-- BigTextPopup&#45;&gt;GridModule -->
-<g id="edge16" class="edge">
+<g id="edge1" class="edge">
 <title>BigTextPopup&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M452,-187.0267C452,-207.7672 452,-239 452,-239 452,-239 1131.2121,-239 1131.2121,-239"/>
-<polygon fill="#000000" stroke="#000000" points="1131.2122,-242.5001 1141.2121,-239 1131.2121,-235.5001 1131.2122,-242.5001"/>
+<path fill="none" stroke="#000000" d="M1956,-187.0908C1956,-210.1328 1956,-247 1956,-247 1956,-247 950.7852,-247 950.7852,-247"/>
+<polygon fill="#000000" stroke="#000000" points="950.7853,-243.5001 940.7852,-247 950.7852,-250.5001 950.7853,-243.5001"/>
+</g>
+<!-- ChoiceEditRenderer -->
+<g id="node2" class="node">
+<title>ChoiceEditRenderer</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1889.2921,-187 1758.7079,-187 1758.7079,-151 1889.2921,-151 1889.2921,-187"/>
+<text text-anchor="middle" x="1824" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">ChoiceEditRenderer</text>
+</g>
+<!-- ChoiceEditRenderer&#45;&gt;GridModule -->
+<g id="edge2" class="edge">
+<title>ChoiceEditRenderer&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M1824,-187.0449C1824,-208.6623 1824,-242 1824,-242 1824,-242 950.8057,-242 950.8057,-242"/>
+<polygon fill="#000000" stroke="#000000" points="950.8058,-238.5001 940.8057,-242 950.8057,-245.5001 950.8058,-238.5001"/>
+</g>
+<!-- ColumnHeaderComponent -->
+<g id="node3" class="node">
+<title>ColumnHeaderComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1740.3613,-187 1573.6387,-187 1573.6387,-151 1740.3613,-151 1740.3613,-187"/>
+<text text-anchor="middle" x="1657" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">ColumnHeaderComponent</text>
+</g>
+<!-- ColumnHeaderComponent&#45;&gt;GridModule -->
+<g id="edge3" class="edge">
+<title>ColumnHeaderComponent&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M1657,-187.2228C1657,-207.3652 1657,-237 1657,-237 1657,-237 950.7073,-237 950.7073,-237"/>
+<polygon fill="#000000" stroke="#000000" points="950.7073,-233.5001 940.7073,-237 950.7072,-240.5001 950.7073,-233.5001"/>
+</g>
+<!-- CompareFilterRenderer -->
+<g id="node4" class="node">
+<title>CompareFilterRenderer</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1555.4482,-187 1406.5518,-187 1406.5518,-151 1555.4482,-151 1555.4482,-187"/>
+<text text-anchor="middle" x="1481" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">CompareFilterRenderer</text>
+</g>
+<!-- CompareFilterRenderer&#45;&gt;GridModule -->
+<g id="edge4" class="edge">
+<title>CompareFilterRenderer&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M1481,-187.2222C1481,-205.8285 1481,-232 1481,-232 1481,-232 950.8694,-232 950.8694,-232"/>
+<polygon fill="#000000" stroke="#000000" points="950.8694,-228.5001 940.8694,-232 950.8693,-235.5001 950.8694,-228.5001"/>
 </g>
 <!-- ConfigMenuComponent -->
-<g id="node14" class="node">
+<g id="node5" class="node">
 <title>ConfigMenuComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="385.3794,-187 232.6206,-187 232.6206,-151 385.3794,-151 385.3794,-187"/>
-<text text-anchor="middle" x="309" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">ConfigMenuComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="1388.3794,-187 1235.6206,-187 1235.6206,-151 1388.3794,-151 1388.3794,-187"/>
+<text text-anchor="middle" x="1312" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">ConfigMenuComponent</text>
 </g>
 <!-- ConfigMenuComponent&#45;&gt;GridModule -->
-<g id="edge17" class="edge">
+<g id="edge5" class="edge">
 <title>ConfigMenuComponent&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M309,-187.2921C309,-209.2057 309,-243 309,-243 309,-243 1131.2046,-243 1131.2046,-243"/>
-<polygon fill="#000000" stroke="#000000" points="1131.2046,-246.5001 1141.2046,-243 1131.2046,-239.5001 1131.2046,-246.5001"/>
+<path fill="none" stroke="#000000" d="M1312,-187.0336C1312,-204.0597 1312,-227 1312,-227 1312,-227 950.746,-227 950.746,-227"/>
+<polygon fill="#000000" stroke="#000000" points="950.746,-223.5001 940.746,-227 950.7459,-230.5001 950.746,-223.5001"/>
 </g>
 <!-- ConfigMultiChoiceComponent -->
-<g id="node15" class="node">
+<g id="node6" class="node">
 <title>ConfigMultiChoiceComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="214.493,-187 23.507,-187 23.507,-151 214.493,-151 214.493,-187"/>
-<text text-anchor="middle" x="119" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">ConfigMultiChoiceComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="1217.493,-187 1026.507,-187 1026.507,-151 1217.493,-151 1217.493,-187"/>
+<text text-anchor="middle" x="1122" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">ConfigMultiChoiceComponent</text>
 </g>
 <!-- ConfigMultiChoiceComponent&#45;&gt;GridModule -->
-<g id="edge18" class="edge">
+<g id="edge6" class="edge">
 <title>ConfigMultiChoiceComponent&#45;&gt;GridModule</title>
-<path fill="none" stroke="#000000" d="M119,-187.3228C119,-210.6602 119,-248 119,-248 119,-248 1131.2632,-248 1131.2632,-248"/>
-<polygon fill="#000000" stroke="#000000" points="1131.2632,-251.5001 1141.2632,-248 1131.2632,-244.5001 1131.2632,-251.5001"/>
+<path fill="none" stroke="#000000" d="M1122,-187.2396C1122,-202.5706 1122,-222 1122,-222 1122,-222 950.6599,-222 950.6599,-222"/>
+<polygon fill="#000000" stroke="#000000" points="950.66,-218.5001 940.6599,-222 950.6599,-225.5001 950.66,-218.5001"/>
+</g>
+<!-- GridComponent -->
+<g id="node7" class="node">
+<title>GridComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1008.4902,-187 901.5098,-187 901.5098,-151 1008.4902,-151 1008.4902,-187"/>
+<text text-anchor="middle" x="955" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridComponent</text>
+</g>
+<!-- GridComponent&#45;&gt;GridModule -->
+<g id="edge7" class="edge">
+<title>GridComponent&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M921.0544,-187.1061C921.0544,-187.1061 921.0544,-205.991 921.0544,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="917.5544,-205.9909 921.0544,-215.991 924.5544,-205.991 917.5544,-205.9909"/>
+</g>
+<!-- IsFixedPipe -->
+<g id="node8" class="node">
+<title>IsFixedPipe</title>
+<polygon fill="#ffffb3" stroke="#000000" points="883.3809,-187 800.6191,-187 800.6191,-151 883.3809,-151 883.3809,-187"/>
+<text text-anchor="middle" x="842" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">IsFixedPipe</text>
+</g>
+<!-- IsFixedPipe&#45;&gt;GridModule -->
+<g id="edge11" class="edge">
+<title>IsFixedPipe&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M869.4183,-187.1061C869.4183,-187.1061 869.4183,-205.991 869.4183,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="865.9184,-205.9909 869.4183,-215.991 872.9184,-205.991 865.9184,-205.9909"/>
+</g>
+<!-- IsGroupPipe -->
+<g id="node9" class="node">
+<title>IsGroupPipe</title>
+<polygon fill="#ffffb3" stroke="#000000" points="782.2605,-187 695.7395,-187 695.7395,-151 782.2605,-151 782.2605,-187"/>
+<text text-anchor="middle" x="739" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">IsGroupPipe</text>
+</g>
+<!-- IsGroupPipe&#45;&gt;GridModule -->
+<g id="edge12" class="edge">
+<title>IsGroupPipe&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M739,-187.2396C739,-202.5706 739,-222 739,-222 739,-222 845.3909,-222 845.3909,-222"/>
+<polygon fill="#000000" stroke="#000000" points="845.391,-225.5001 855.3909,-222 845.3909,-218.5001 845.391,-225.5001"/>
+</g>
+<!-- IsRowVisiblePipe -->
+<g id="node10" class="node">
+<title>IsRowVisiblePipe</title>
+<polygon fill="#ffffb3" stroke="#000000" points="677.8739,-187 560.1261,-187 560.1261,-151 677.8739,-151 677.8739,-187"/>
+<text text-anchor="middle" x="619" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">IsRowVisiblePipe</text>
+</g>
+<!-- IsRowVisiblePipe&#45;&gt;GridModule -->
+<g id="edge13" class="edge">
+<title>IsRowVisiblePipe&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M619,-187.0336C619,-204.0597 619,-227 619,-227 619,-227 845.3222,-227 845.3222,-227"/>
+<polygon fill="#000000" stroke="#000000" points="845.3222,-230.5001 855.3222,-227 845.3222,-223.5001 845.3222,-230.5001"/>
+</g>
+<!-- IsVisiblePipe -->
+<g id="node11" class="node">
+<title>IsVisiblePipe</title>
+<polygon fill="#ffffb3" stroke="#000000" points="541.9316,-187 450.0684,-187 450.0684,-151 541.9316,-151 541.9316,-187"/>
+<text text-anchor="middle" x="496" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">IsVisiblePipe</text>
+</g>
+<!-- IsVisiblePipe&#45;&gt;GridModule -->
+<g id="edge14" class="edge">
+<title>IsVisiblePipe&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M496,-187.2222C496,-205.8285 496,-232 496,-232 496,-232 845.3595,-232 845.3595,-232"/>
+<polygon fill="#000000" stroke="#000000" points="845.3596,-235.5001 855.3595,-232 845.3595,-228.5001 845.3596,-235.5001"/>
+</g>
+<!-- SelectFilterRenderer -->
+<g id="node12" class="node">
+<title>SelectFilterRenderer</title>
+<polygon fill="#ffffb3" stroke="#000000" points="431.8389,-187 300.1611,-187 300.1611,-151 431.8389,-151 431.8389,-187"/>
+<text text-anchor="middle" x="366" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">SelectFilterRenderer</text>
+</g>
+<!-- SelectFilterRenderer&#45;&gt;GridModule -->
+<g id="edge15" class="edge">
+<title>SelectFilterRenderer&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M366,-187.2228C366,-207.3652 366,-237 366,-237 366,-237 845.3635,-237 845.3635,-237"/>
+<polygon fill="#000000" stroke="#000000" points="845.3635,-240.5001 855.3635,-237 845.3635,-233.5001 845.3635,-240.5001"/>
+</g>
+<!-- TextEditRenderer -->
+<g id="node13" class="node">
+<title>TextEditRenderer</title>
+<polygon fill="#ffffb3" stroke="#000000" points="282.2936,-187 165.7064,-187 165.7064,-151 282.2936,-151 282.2936,-187"/>
+<text text-anchor="middle" x="224" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">TextEditRenderer</text>
+</g>
+<!-- TextEditRenderer&#45;&gt;GridModule -->
+<g id="edge16" class="edge">
+<title>TextEditRenderer&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M224,-187.0449C224,-208.6623 224,-242 224,-242 224,-242 845.327,-242 845.327,-242"/>
+<polygon fill="#000000" stroke="#000000" points="845.327,-245.5001 855.327,-242 845.3269,-238.5001 845.327,-245.5001"/>
+</g>
+<!-- TextFilterRenderer -->
+<g id="node14" class="node">
+<title>TextFilterRenderer</title>
+<polygon fill="#ffffb3" stroke="#000000" points="147.7893,-187 24.2107,-187 24.2107,-151 147.7893,-151 147.7893,-187"/>
+<text text-anchor="middle" x="86" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">TextFilterRenderer</text>
+</g>
+<!-- TextFilterRenderer&#45;&gt;GridModule -->
+<g id="edge17" class="edge">
+<title>TextFilterRenderer&#45;&gt;GridModule</title>
+<path fill="none" stroke="#000000" d="M86,-187.0908C86,-210.1328 86,-247 86,-247 86,-247 845.2021,-247 845.2021,-247"/>
+<polygon fill="#000000" stroke="#000000" points="845.2021,-250.5001 855.2021,-247 845.202,-243.5001 845.2021,-250.5001"/>
 </g>
 <!-- GridComponent  -->
-<g id="node20" class="node">
+<g id="node19" class="node">
 <title>GridComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="1239.4913,-317 1128.5087,-317 1128.5087,-281 1239.4913,-281 1239.4913,-317"/>
-<text text-anchor="middle" x="1184" y="-294.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridComponent </text>
+<polygon fill="#fb8072" stroke="#000000" points="953.4913,-317 842.5087,-317 842.5087,-281 953.4913,-281 953.4913,-317"/>
+<text text-anchor="middle" x="898" y="-294.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridComponent </text>
 </g>
 <!-- GridModule&#45;&gt;GridComponent  -->
-<g id="edge19" class="edge">
+<g id="edge18" class="edge">
 <title>GridModule&#45;&gt;GridComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M1184,-252.1061C1184,-252.1061 1184,-270.991 1184,-270.991"/>
-<polygon fill="#000000" stroke="#000000" points="1180.5001,-270.9909 1184,-280.991 1187.5001,-270.991 1180.5001,-270.9909"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M898,-252.1061C898,-252.1061 898,-270.991 898,-270.991"/>
+<polygon fill="#000000" stroke="#000000" points="894.5001,-270.9909 898,-280.991 901.5001,-270.991 894.5001,-270.9909"/>
 </g>
 <!-- GridService -->
-<g id="node17" class="node">
+<g id="node16" class="node">
 <title>GridService</title>
-<ellipse fill="#fdb462" stroke="#000000" cx="2079" cy="-104" rx="57.881" ry="18"/>
-<text text-anchor="middle" x="2079" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridService</text>
+<ellipse fill="#fdb462" stroke="#000000" cx="1111" cy="-104" rx="57.881" ry="18"/>
+<text text-anchor="middle" x="1111" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridService</text>
 </g>
 <!-- GridService&#45;&gt;GridComponent -->
-<g id="edge2" class="edge">
+<g id="edge8" class="edge">
 <title>GridService&#45;&gt;GridComponent</title>
-<path fill="none" stroke="#000000" d="M2101.2951,-120.7391C2101.2951,-120.7391 2101.2951,-140.7182 2101.2951,-140.7182"/>
-<polygon fill="#000000" stroke="#000000" points="2097.7952,-140.7182 2101.2951,-150.7182 2104.7952,-140.7182 2097.7952,-140.7182"/>
+<path fill="none" stroke="#000000" d="M1111,-122.1097C1111,-131.897 1111,-142 1111,-142 1111,-142 981.7476,-142 981.7476,-142 981.7476,-142 981.7476,-142.8841 981.7476,-142.8841"/>
+<polygon fill="#000000" stroke="#000000" points="978.2477,-140.8408 981.7476,-150.8408 985.2477,-140.8409 978.2477,-140.8408"/>
 </g>
 <!-- GridEventService -->
-<g id="node18" class="node">
+<g id="node17" class="node">
 <title>GridEventService</title>
-<ellipse fill="#fdb462" stroke="#000000" cx="1923" cy="-104" rx="80.4344" ry="18"/>
-<text text-anchor="middle" x="1923" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridEventService</text>
+<ellipse fill="#fdb462" stroke="#000000" cx="955" cy="-104" rx="80.4344" ry="18"/>
+<text text-anchor="middle" x="955" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridEventService</text>
 </g>
 <!-- GridEventService&#45;&gt;GridComponent -->
-<g id="edge3" class="edge">
+<g id="edge9" class="edge">
 <title>GridEventService&#45;&gt;GridComponent</title>
-<path fill="none" stroke="#000000" d="M2003.4209,-104C2011.5405,-104 2016.8702,-104 2016.8702,-104 2016.8702,-104 2016.8702,-169 2016.8702,-169 2016.8702,-169 2020.4549,-169 2020.4549,-169"/>
-<polygon fill="#000000" stroke="#000000" points="2020.455,-172.5001 2030.4549,-169 2020.4549,-165.5001 2020.455,-172.5001"/>
+<path fill="none" stroke="#000000" d="M955,-122.1061C955,-122.1061 955,-140.991 955,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="951.5001,-140.9909 955,-150.991 958.5001,-140.991 951.5001,-140.9909"/>
 </g>
 <!-- GridMessageService -->
-<g id="node19" class="node">
+<g id="node18" class="node">
 <title>GridMessageService</title>
-<ellipse fill="#fdb462" stroke="#000000" cx="1733" cy="-104" rx="91.4481" ry="18"/>
-<text text-anchor="middle" x="1733" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridMessageService</text>
+<ellipse fill="#fdb462" stroke="#000000" cx="765" cy="-104" rx="91.4481" ry="18"/>
+<text text-anchor="middle" x="765" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">GridMessageService</text>
 </g>
 <!-- GridMessageService&#45;&gt;GridComponent -->
-<g id="edge4" class="edge">
+<g id="edge10" class="edge">
 <title>GridMessageService&#45;&gt;GridComponent</title>
-<path fill="none" stroke="#000000" d="M1780.3794,-119.7268C1780.3794,-128.2263 1780.3794,-137 1780.3794,-137 1780.3794,-137 2065.9,-137 2065.9,-137 2065.9,-137 2065.9,-140.7566 2065.9,-140.7566"/>
-<polygon fill="#000000" stroke="#000000" points="2062.4001,-140.7566 2065.9,-150.7566 2069.4001,-140.7566 2062.4001,-140.7566"/>
+<path fill="none" stroke="#000000" d="M828.5168,-117.0163C828.5168,-124.3284 828.5168,-132 828.5168,-132 828.5168,-132 928.2525,-132 928.2525,-132 928.2525,-132 928.2525,-140.9336 928.2525,-140.9336"/>
+<polygon fill="#000000" stroke="#000000" points="924.7525,-140.9335 928.2525,-150.9336 931.7525,-140.9336 924.7525,-140.9335"/>
 </g>
 </g>
 </svg>
 
-                </div>
-                <i id="fullscreen" class="fa fa-expand module-graph-fullscreen-btn" aria-hidden="true"></i>
-                <div class="btn-group">
-                    <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
-                    <button id="reset" class="btn btn-default btn-sm">Reset</button>
-                    <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
-                </div>
-            </div>
+    </div>
+    <i id="fullscreen" class="icon ion-ios-resize module-graph-fullscreen-btn" aria-hidden="true"></i>
+    <div class="btn-group">
+        <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
+        <button id="reset" class="btn btn-default btn-sm">Reset</button>
+        <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+    </div>
+</div>
+  
 <div class="container-fluid overview">
     <div class="row">
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-block">
-                        <h4 class="card-title"><span class="fa fa-archive"></span></h4>
-                        <p class="card-text">
-                            <a href="./modules.html">1 module</a>
-                        </p>
-                    </div>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-ios-archive"></span></h4>
+                    <p class="card-text">
+                        <a href="./modules.html">1 Module</a>
+                    </p>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-block">
-                        <h4 class="card-title"><span class="fa fa-cogs"></span></h4>
-                        <p class="card-text">11 components</p>
-                    </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-md-cog"></span></h4>
+                    <p class="card-text">10 Components</p>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-block">
-                        <h4 class="card-title"><span class="fa fa-code-fork"></span></h4>
-                        <p class="card-text">4 injectables</p>
-                    </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-md-arrow-round-down"></span></h4>
+                    <p class="card-text">4 Injectables</p>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-block">
-                        <h4 class="card-title"><span class="fa fa-plus"></span></h4>
-                        <p class="card-text">4 pipes</p>
-                    </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-md-add"></span></h4>
+                    <p class="card-text">4 Pipes</p>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-block">
-                        <h4 class="card-title"><span class="fa fa-file-code-o"></span></h4>
-                        <p class="card-text">32 classes</p>
-                    </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-ios-paper"></span></h4>
+                    <p class="card-text">32 Classes</p>
                 </div>
             </div>
-            <div class="col-sm-3">
-                <div class="card text-center">
-                    <div class="card-block">
-                        <h4 class="card-title"><span class="fa fa-info"></span></h4>
-                        <p class="card-text">12 interfaces</p>
-                    </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center">
+                <div class="card-block">
+                    <h4 class="card-title"><span class="icon ion-md-information-circle-outline"></span></h4>
+                    <p class="card-text">12 Interfaces</p>
                 </div>
             </div>
+        </div>
     </div>
 </div>
 <script src="js/libs/svg-pan-zoom.min.js"></script>
-<script src="js/svg-pan-zoom.controls.js"></script>
+<script src="js/svg-pan-zoom.controls.js"></script> 
 
 
 
@@ -1109,13 +374,16 @@
 
 
 
+
+
+                   
 
 
 
 
                    </div><div class="search-results">
     <div class="has-results">
-        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
         <ul class="search-results-list"></ul>
     </div>
     <div class="no-results">
@@ -1123,8 +391,21 @@
     </div>
 </div>
 </div>
+               <!-- END CONTENT -->
            </div>
        </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'overview';
+            var COMPODOC_CURRENT_PAGE_URL = 'overview.html';
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
 
        <script src="./js/libs/bootstrap-native.js"></script>
 
@@ -1135,17 +416,16 @@
 
        <script src="./js/compodoc.js"></script>
 
-       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 0;</script>
-
-       <script src="./js/search/search.js"></script>
-       <script src="./js/search/lunr.min.js"></script>
-       <script src="./js/search/search-lunr.js"></script>
-
        <script src="./js/tabs.js"></script>
        <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
        <script src="./js/libs/prism.js"></script>
        <script src="./js/sourceCode.js"></script>
-       <script src="./js/search/search_index.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
 
 
     </body>
